@@ -16,10 +16,12 @@ public class PlayerController : MonoBehaviour
     private bool jumpCheck;         // This variable is used to check if the jump button is pressed
     private float moveInput;        // Used for storing the movement input, so that it can be taken from update to fixedupdate
     private bool isGrounded;        // Used for checking if the player is touching the ground
+    private bool isFacingRight = true;  // Used for flipping the player left or right
 
+    // Variables for making the wall jump work. The method comes from this video: https://www.youtube.com/watch?v=O6VX6Ro7EtA&t=237s
+    public float wallSlidingSpeed = 2f;
+    private bool isWallSliding;
 
-<<<<<<< Updated upstream
-=======
     private bool isWallJumping;
     private float wallJumpingDirection;
     private float wallJumpingTime = 0.2f;
@@ -29,7 +31,6 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField] private Transform wallCheck; // Used to ensure that what the player is hitting is a wall, it is an empty gameobject put on the player, that is used in the WallSlide method
     [SerializeField] private LayerMask wallLayer; // Used to store the wall layer 
->>>>>>> Stashed changes
 
 
 
@@ -50,6 +51,14 @@ public class PlayerController : MonoBehaviour
         
         CheckIfButtonPressed(); // Checks if a button has been pressed
         CheckIfGrounded();      // Checks if the player is on the ground
+
+        WallSlide();            // Checks whether the player should be sliding down a wall
+        WallJump();             // Allows the player to jump off a wall
+
+
+        if(!isWallJumping) 
+            Flip();
+
     }
 
     void FixedUpdate() {
@@ -87,8 +96,6 @@ public class PlayerController : MonoBehaviour
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, groundCheck.GetComponent<CircleCollider2D>().radius, groundLayer);
         
     }
-<<<<<<< Updated upstream
-=======
 
 
     // These methods deal with wall Sliding and Wall jumping
@@ -131,7 +138,7 @@ public class PlayerController : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Space) && wallJumpingCounter > 0f) { // Checks if the player presses the jump button and if the wallJumpingCounter is greater than zero, since that means the player is allowed to wallJump
 
             isWallJumping = true;
-            Debug.Log("WallJump");
+            Debug.Log("Jump");
             rb2D.AddForce(new Vector2(wallJumpingDirection * wallJumpingPower.x, wallJumpingPower.y),ForceMode2D.Impulse);
             wallJumpingCounter = 0f;                                                                    // Since the player cannot wallJump again after they have already jumped, this sets that counter to zero
 
@@ -162,5 +169,4 @@ public class PlayerController : MonoBehaviour
             transform.localScale = localScale; // Flips the players localScale
         }
     }
->>>>>>> Stashed changes
 }
