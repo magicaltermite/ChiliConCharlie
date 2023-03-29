@@ -144,7 +144,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 9.84
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -429,7 +429,7 @@ GameObject:
   - component: {fileID: 658169272}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -449,6 +449,7 @@ Transform:
   - {fileID: 3254096323105350711}
   - {fileID: 1610154071}
   - {fileID: 519420032}
+  - {fileID: 1451956222}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -507,6 +508,11 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 8
+  wallSlidingSpeed: 2
+  wallCheck: {fileID: 1451956222}
+  wallLayer:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!1 &3254096323105350709
 GameObject:
   m_ObjectHideFlags: 0

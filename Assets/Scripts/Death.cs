@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class Death : MonoBehaviour
 {
     private void OnTriggerEnter2D(Collider2D collision) {
-        SceneManager.LoadScene("SampleScene");
+        if(collision.CompareTag("Player"))
+            SceneManager.LoadScene("TestScene");
     }
 }
