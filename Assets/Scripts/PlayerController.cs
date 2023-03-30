@@ -52,7 +52,7 @@ public class PlayerController : MonoBehaviour
             isDashing = true; // .. then you will be set to "is dashing" aaand...
             canDash = false; // ... can dash is set to false!
             dashRender.emitting = true; // Dash rederer will start emitting!
-            dashingDir = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")); // And the direction is based on the input mager so directions from there
+            dashingDir = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical")); // And the direction is based on the input manager so directions from there
 
             if(dashingDir == Vector2.zero) // if were pressing the dash button but no direction 
             {
@@ -64,7 +64,7 @@ public class PlayerController : MonoBehaviour
 
         if (isDashing)
         {
-            rb2D.velocity = dashingDir.normalized * dashingVelocity; 
+            rb2D.AddForce(dashingDir * dashingVelocity); 
             return; 
         }
 
@@ -91,6 +91,7 @@ public class PlayerController : MonoBehaviour
     private IEnumerator StopDashing() // Coroutine for when the dash is stopping
     {
         yield return new WaitForSeconds(dashingTime); // Wait for the amount of time a dash takes
+        Move();
         dashRender.emitting = false; // Set the render emitting to false
         isDashing = false; // and change the is dashing state from true to false
     }
