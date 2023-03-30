@@ -27,6 +27,8 @@ public class PlayerController : MonoBehaviour
     private float wallJumpingTime = 0.2f;
     private float wallJumpingCounter;
     private float wallJumpingDuration = 0.4f;
+
+    [SerializeField]
     private Vector2 wallJumpingPower = new Vector2(8f, 16f);
 
     [SerializeField] private Transform wallCheck; // Used to ensure that what the player is hitting is a wall, it is an empty gameobject put on the player, that is used in the WallSlide method
@@ -86,10 +88,10 @@ public class PlayerController : MonoBehaviour
 
     private void CheckIfButtonPressed() {
         // This method would be used to check for specific button presses. I imagine this could be used to check for other buttons presses too, if that should be necessary
-
-        if (Input.GetKeyDown(KeyCode.Space)) {
+        if(isGrounded)
+            if (Input.GetKeyDown(KeyCode.Space)) {
             jumpCheck = true;
-        }
+            }
     }
 
     private void CheckIfGrounded() {
