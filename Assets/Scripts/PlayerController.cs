@@ -63,8 +63,9 @@ public class PlayerController : MonoBehaviour
 
     void FixedUpdate() {
         // Move and jump are placed here to ensure that they are triggered with the physics engine
-        Move();
-
+        
+            Move();
+        
         // Used to check if the player can jump and they have pressed the jump button
         if (jumpCheck == true && isGrounded == true) { // This if statement determines if the player is allowed to jump, jump check is used to check if the player has pressed the jump button and
                                                        // isGrounded is used to check if the player is touching the ground
@@ -76,8 +77,11 @@ public class PlayerController : MonoBehaviour
     }
 
     private void Move() {
-        // Used to make the player move
-        rb2D.velocity = new Vector2(moveInput * moveSpeed, rb2D.velocity.y);
+        if (isGrounded) {
+            // Used to make the player move
+            rb2D.velocity = new Vector2(moveInput * moveSpeed, rb2D.velocity.y);
+        }
+
     }
 
     private void CheckIfButtonPressed() {
@@ -100,17 +104,16 @@ public class PlayerController : MonoBehaviour
 
     // These methods deal with wall Sliding and Wall jumping
     private bool IsWalled() {
-        return Physics2D.OverlapCircle(wallCheck.position, 0.3f, wallLayer); // Creates a small circle around the wallcheck object on the player that checks if it is hitting a gameobject on the layer "WAll"
+        return Physics2D.OverlapCircle(wallCheck.position, 0.2f, wallLayer); // Creates a small circle around the wallcheck object on the player that checks if it is hitting a gameobject on the layer "WAll"
     }
 
 
     private void WallSlide() {
 
-        if(IsWalled() && !isGrounded && !isWallJumping) { // Here is checkked if the isWalled methods returns true and the player is not grounded and their current move input is not 0, meaning they are pressing a direction
+        if(IsWalled() && !isGrounded && moveInput != 0f) { // Here is checkked if the isWalled methods returns true and the player is not grounded and their current move input is not 0, meaning they are pressing a direction
             
             isWallSliding = true; // Sets the wallSliding to true
-            rb2D.velocity = new Vector2(0, Mathf.Clamp(rb2D.velocity.y, -wallSlidingSpeed, float.MaxValue)); // Changes the players velocity, so they start "falling" slowly, but only so long as they are touching a wall
-            Debug.Log("Sliding");
+            rb2D.velocity = new Vector2(rb2D.velocity.x, Mathf.Clamp(rb2D.velocity.y, -wallSlidingSpeed, float.MaxValue)); // Changes the players velocity, so they start "falling" slowly, but only so long as they are touching a wall
         }
         else {
             isWallSliding = false; // Sets the wallsliding to false if the player is not touching a wall
@@ -120,9 +123,7 @@ public class PlayerController : MonoBehaviour
 
     private void WallJump() {
 
-        // This if else statement is there to give the player a short window of time after they have stopped touching the wall to still walljump, making the jump feel a little more forgiving
-        
-        if(isWallSliding) { 
+        if(isWallSliding) { // This if else statement is there to give the player a short window of time after they have stopped touching the wall to still walljump, making the jump feel a little more forgiving
 
             isWallJumping = false; 
             wallJumpingDirection = -transform.localScale.x; // Sets the wallJump direction to the opposite of the players current direction.
@@ -138,8 +139,7 @@ public class PlayerController : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Space) && wallJumpingCounter > 0f) { // Checks if the player presses the jump button and if the wallJumpingCounter is greater than zero, since that means the player is allowed to wallJump
 
             isWallJumping = true;
-            Debug.Log("Jump");
-            rb2D.AddForce(new Vector2(wallJumpingDirection * wallJumpingPower.x, wallJumpingPower.y),ForceMode2D.Impulse);
+            rb2D.velocity = new Vector2(wallJumpingDirection * wallJumpingPower.x, wallJumpingPower.y); // Used to handle the players jump direction and velocity
             wallJumpingCounter = 0f;                                                                    // Since the player cannot wallJump again after they have already jumped, this sets that counter to zero
 
             if (transform.localScale.x != wallJumpingDirection) { // This part of the code ensures that the player is facing the correct direction following a walljump. Might be redundant due to how the players movement is setup
