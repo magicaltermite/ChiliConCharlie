@@ -2,10 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class Health : MonoBehaviour
 {
     [SerializeField] private int health = 100; // The amount of health the unit has
-
 
 
     // Start is called before the first frame update
