@@ -17,9 +17,7 @@ public class Health : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(health <= 0) {
-            
-        }
+        
     }
 
 
@@ -29,6 +27,9 @@ public class Health : MonoBehaviour
         }
 
         health -= damage; // This script is made to allow someone to damage this character
-        Debug.Log("I am dead :c");
+
+        if (health <= 0) {
+            Debug.Log("I am dead :c");
+        }
     }
 }

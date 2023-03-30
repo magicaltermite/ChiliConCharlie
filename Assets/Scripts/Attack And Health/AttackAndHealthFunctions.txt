@@ -9,3 +9,5 @@ AttackArea: This scripts consists of an onTrigger function that checks for colli
 If the thing it collides with has an "Enemy" tag (note uppercase), it then calls a method located in the health Script
 
 Health: This scripts contains information on how much health a given object has and how to reduce it, through the damage function
+
+In order for the attack to work, the rigidbody2D of the object hit, has its sleeping mode set to never sleep, otherwise the player has to move after each attack
