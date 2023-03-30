@@ -29,7 +29,12 @@ public class Health : MonoBehaviour
         health -= damage; // This script is made to allow someone to damage this character
 
         if (health <= 0) {
-            Debug.Log("I am dead :c");
+            Kill();
         }
+    }
+
+
+    private void Kill() {
+        this.gameObject.SetActive(false);
     }
 }

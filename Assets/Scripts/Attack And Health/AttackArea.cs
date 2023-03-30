@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class AttackArea : MonoBehaviour {
 
-    private int damage = 25;
+    [SerializeField] private int damage = 25;
 
     private void OnTriggerEnter2D(Collider2D collision) {
         if(collision.gameObject.tag == "Enemy") {

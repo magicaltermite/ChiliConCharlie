@@ -63,8 +63,9 @@ public class PlayerController : MonoBehaviour
 
     void FixedUpdate() {
         // Move and jump are placed here to ensure that they are triggered with the physics engine
-        Move();
-
+        
+            Move();
+        
         // Used to check if the player can jump and they have pressed the jump button
         if (jumpCheck == true && isGrounded == true) { // This if statement determines if the player is allowed to jump, jump check is used to check if the player has pressed the jump button and
                                                        // isGrounded is used to check if the player is touching the ground
@@ -76,8 +77,11 @@ public class PlayerController : MonoBehaviour
     }
 
     private void Move() {
-        // Used to make the player move
-        rb2D.velocity = new Vector2(moveInput * moveSpeed, rb2D.velocity.y);
+        if (isGrounded) {
+            // Used to make the player move
+            rb2D.velocity = new Vector2(moveInput * moveSpeed, rb2D.velocity.y);
+        }
+
     }
 
     private void CheckIfButtonPressed() {
