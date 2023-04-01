@@ -49,9 +49,16 @@ public class Enemy : MonoBehaviour
         points.Add(p2.transform);
     }
 
+    private void Start()
+    {
+      
+    }
+
     private void Update()
     {
         MoveToNextPoint();
+
+        
     }
 
     void MoveToNextPoint()
