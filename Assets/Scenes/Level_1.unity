@@ -6836,6 +6836,14 @@ PrefabInstance:
       propertyPath: moveSpeed
       value: 7
       objectReference: {fileID: 0}
+    - target: {fileID: 658169272, guid: e14b9b6cf7f48724c95886307b97abc1, type: 3}
+      propertyPath: wallJumpingPower.x
+      value: 32
+      objectReference: {fileID: 0}
+    - target: {fileID: 658169272, guid: e14b9b6cf7f48724c95886307b97abc1, type: 3}
+      propertyPath: wallJumpingPower.y
+      value: 14
+      objectReference: {fileID: 0}
     - target: {fileID: 658169273, guid: e14b9b6cf7f48724c95886307b97abc1, type: 3}
       propertyPath: m_AngularDrag
       value: 0
