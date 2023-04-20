@@ -133,24 +133,11 @@ public class PlayerController : MonoBehaviour
             rb2D.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
             jumpCheck = false;
         }
+        
     }
-
-<<<<<<< Updated upstream
-    private IEnumerator StopDashing() // Coroutine for when the dash is stopping
-    {
-        yield return new WaitForSeconds(dashingTime); // Wait for the amount of time a dash takes
-        Move();
-        dashRender.emitting = false; // Set the render emitting to false
-        isDashing = false; // and change the is dashing state from true to false
-    }
-
-    private void Move() {
-        if (isGrounded) {
-=======
     private void Move()
     {
         if (isGrounded)
->>>>>>> Stashed changes
             // Used to make the player move
             rb2D.velocity = new Vector2(moveInput * moveSpeed, rb2D.velocity.y);
     }
