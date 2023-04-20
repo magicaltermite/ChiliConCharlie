@@ -149,7 +149,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 168922849}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11.43, y: -1.96, z: -0.058724515}
+  m_LocalPosition: {x: 11.43, y: 1.87, z: -0.058724515}
   m_LocalScale: {x: 8.0977, y: 0.63038623, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -294,7 +294,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1538713046}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 16.9, y: -0.13, z: -0.058724515}
+  m_LocalPosition: {x: 16.9, y: 4.58, z: -0.058724515}
   m_LocalScale: {x: 5.9536, y: 0.5318, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -457,8 +457,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2003661641}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.49463525, y: -3.7404332, z: -0.058724515}
-  m_LocalScale: {x: 23.168839, y: 0.52989966, z: 1}
+  m_LocalPosition: {x: 6.4671, y: -3.7404332, z: -0.058724515}
+  m_LocalScale: {x: 37.093307, y: 0.52989966, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1235405470}
@@ -499,11 +499,23 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 658169272, guid: e14b9b6cf7f48724c95886307b97abc1, type: 3}
       propertyPath: dashingTime
-      value: 0.2
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 658169272, guid: e14b9b6cf7f48724c95886307b97abc1, type: 3}
       propertyPath: dashingVelocity
-      value: 200
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 658169272, guid: e14b9b6cf7f48724c95886307b97abc1, type: 3}
+      propertyPath: dashingVelocityX
+      value: 500
+      objectReference: {fileID: 0}
+    - target: {fileID: 658169272, guid: e14b9b6cf7f48724c95886307b97abc1, type: 3}
+      propertyPath: dashingVelocityY
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 658169273, guid: e14b9b6cf7f48724c95886307b97abc1, type: 3}
+      propertyPath: m_GravityScale
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3254096322231989638, guid: e14b9b6cf7f48724c95886307b97abc1, type: 3}
       propertyPath: m_RootOrder
