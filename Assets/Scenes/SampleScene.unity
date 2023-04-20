@@ -499,7 +499,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 658169272, guid: e14b9b6cf7f48724c95886307b97abc1, type: 3}
       propertyPath: dashingTime
-      value: 0.1
+      value: 0.2
       objectReference: {fileID: 0}
     - target: {fileID: 658169272, guid: e14b9b6cf7f48724c95886307b97abc1, type: 3}
       propertyPath: dashingVelocity
@@ -511,7 +511,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 658169272, guid: e14b9b6cf7f48724c95886307b97abc1, type: 3}
       propertyPath: dashingVelocityY
-      value: 20
+      value: 1.1
       objectReference: {fileID: 0}
     - target: {fileID: 658169273, guid: e14b9b6cf7f48724c95886307b97abc1, type: 3}
       propertyPath: m_GravityScale

@@ -21,7 +21,7 @@ public class PlayerController : MonoBehaviour
 
     [Header("Dash")]
     [SerializeField] private float dashingVelocityX = 14f; // Velocity of the dash, Serialized for easy changes
-    [SerializeField] private float dashingVelocityY = 10f;
+    // [SerializeField] private float dashingVelocityY = 10f;
     [SerializeField] private float dashingTime = 0.5f; // How long is the dash gonna last? Serialized for easy changes
     private Vector2 dashingDir; // Storing the direction of the dash
     private bool isDashing; // Checking if the character is dashing
@@ -40,7 +40,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update() {
         float dashDirX = Input.GetAxis("Horizontal"); // Horizontal direction!!
-        float dashDirY = Input.GetAxis("Vertical"); // Vertical direction!!
+       // float dashDirY = Input.GetAxis("Vertical"); // Vertical direction!!
         // Since update is the fastest way to check if something is happening, the input checks are placed here to make the game feel more repsonsive
         moveInput = Input.GetAxis("Horizontal");
         
@@ -57,7 +57,7 @@ public class PlayerController : MonoBehaviour
 
 
             dashRender.emitting = true; // Dash rederer will start emitting!
-            dashingDir = new Vector2(dashDirX, dashDirY); // And the direction is based on the input manager so directions from there
+            dashingDir = new Vector2(dashDirX,0); // And the direction is based on the input manager so directions from there
 
             
 
@@ -75,12 +75,7 @@ public class PlayerController : MonoBehaviour
             Debug.Log(dashingDir.normalized * dashingVelocityX);
             return; 
         }
-        if (isDashing && dashDirY< 1)
-        {
-            rb2D.AddForce(dashingDir.normalized * dashingVelocityY);
-            Debug.Log(dashingDir.normalized * dashingVelocityY);
-            return;
-        }
+  
 
         if (isGrounded)
         {
