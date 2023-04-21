@@ -24,7 +24,6 @@ public class PlayerController : MonoBehaviour
     private bool isWallJumping;
     private bool isWallSliding;
 
-<<<<<<< Updated upstream
     private TrailRenderer dashRender; // Storing the trail renderer for the dash
 
     [Header("Dash")]
@@ -34,7 +33,6 @@ public class PlayerController : MonoBehaviour
     private Vector2 dashingDir; // Storing the direction of the dash
     private bool isDashing; // Checking if the character is dashing
     private bool canDash = true; // Checking if the character is in a state where they CAN dash 
-=======
     private bool jumpCheck; // This variable is used to check if the jump button is pressed
     private float moveInput; // Used for storing the movement input, so that it can be taken from update to fixedupdate
 
@@ -43,7 +41,6 @@ public class PlayerController : MonoBehaviour
     private float wallJumpingDirection;
     private readonly float wallJumpingDuration = 0.4f;
     private readonly float wallJumpingTime = 0.2f;
->>>>>>> Stashed changes
 
 
     // Start is called before the first frame update
@@ -69,7 +66,6 @@ public class PlayerController : MonoBehaviour
 
         if (!isWallJumping)
             Flip();
-<<<<<<< Updated upstream
 
         // ----------------DASH------------
         float dashDirX = Input.GetAxis("Horizontal"); // Horizontal direction!!
@@ -114,9 +110,6 @@ public class PlayerController : MonoBehaviour
         }
     
 }
-=======
-    }
->>>>>>> Stashed changes
 
     private void FixedUpdate()
     {
@@ -135,7 +128,6 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-<<<<<<< Updated upstream
     private IEnumerator StopDashing() // Coroutine for when the dash is stopping
     {
         yield return new WaitForSeconds(dashingTime); // Wait for the amount of time a dash takes
@@ -144,13 +136,9 @@ public class PlayerController : MonoBehaviour
         isDashing = false; // and change the is dashing state from true to false
     }
 
-    private void Move() {
-        if (isGrounded) {
-=======
     private void Move()
     {
         if (isGrounded)
->>>>>>> Stashed changes
             // Used to make the player move
             rb2D.velocity = new Vector2(moveInput * moveSpeed, rb2D.velocity.y);
     }
