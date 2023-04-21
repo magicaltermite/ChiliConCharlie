@@ -5762,20 +5762,8 @@ PrefabInstance:
       value: 9.84
       objectReference: {fileID: 0}
     - target: {fileID: 658169272, guid: e14b9b6cf7f48724c95886307b97abc1, type: 3}
-      propertyPath: jumpLerp
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 658169272, guid: e14b9b6cf7f48724c95886307b97abc1, type: 3}
       propertyPath: jumpForce
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 658169272, guid: e14b9b6cf7f48724c95886307b97abc1, type: 3}
-      propertyPath: wallJumpingPower.x
-      value: 32
-      objectReference: {fileID: 0}
-    - target: {fileID: 658169272, guid: e14b9b6cf7f48724c95886307b97abc1, type: 3}
-      propertyPath: wallJumpingPower.y
-      value: 14
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 3254096322231989638, guid: e14b9b6cf7f48724c95886307b97abc1, type: 3}
       propertyPath: m_RootOrder

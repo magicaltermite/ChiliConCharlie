@@ -7,8 +7,7 @@ public class PlayerController : MonoBehaviour
   
     public float moveSpeed = 10;    // Used to allow changing of the players speed
     public float jumpForce = 10;    // Used to allow changing of the players jumpheight and speed
-    public float jumpLerp = 500;
-    
+
     public Transform groundCheck;
     public LayerMask groundLayer;
 
@@ -18,7 +17,6 @@ public class PlayerController : MonoBehaviour
     private float moveInput;        // Used for storing the movement input, so that it can be taken from update to fixedupdate
     private bool isGrounded;        // Used for checking if the player is touching the ground
     private bool isFacingRight = true;  // Used for flipping the player left or right
-    private bool canMove;
 
     // Variables for making the wall jump work. The method comes from this video: https://www.youtube.com/watch?v=O6VX6Ro7EtA&t=237s
     public float wallSlidingSpeed = 2f;
@@ -43,7 +41,6 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         rb2D = GetComponent<Rigidbody2D>();
-        canMove = true;
     }
 
 
@@ -72,25 +69,19 @@ public class PlayerController : MonoBehaviour
             Move();
         
         // Used to check if the player can jump and they have pressed the jump button
-        if (jumpCheck == true && isGrounded == true) {
-            // This if statement determines if the player is allowed to jump, jump check is used to check if the player has pressed the jump button and
-            // isGrounded is used to check if the player is touching the ground
+        if (jumpCheck == true && isGrounded == true) { // This if statement determines if the player is allowed to jump, jump check is used to check if the player has pressed the jump button and
+                                                       // isGrounded is used to check if the player is touching the ground
+
             rb2D.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
             jumpCheck = false;
         }
-
+        
     }
 
     private void Move() {
-        if (isGrounded && canMove) {
+        if (isGrounded) {
             // Used to make the player move
             rb2D.velocity = new Vector2(moveInput * moveSpeed, rb2D.velocity.y);
-        }
-        else if(!isGrounded) {
-            var velocity = rb2D.velocity;
-            
-            rb2D.velocity = Vector2.Lerp(velocity, (new Vector2(moveInput * moveSpeed, velocity.y)),
-                jumpLerp + Time.deltaTime);
         }
 
     }
@@ -111,8 +102,7 @@ public class PlayerController : MonoBehaviour
         
     }
 
-    #region WallJump
-    
+
     // These methods deal with wall Sliding and Wall jumping
     private bool IsWalled() {
         return Physics2D.OverlapCircle(wallCheck.position, 0.2f, wallLayer); // Creates a small circle around the wallcheck object on the player that checks if it is hitting a gameobject on the layer "WAll"
@@ -138,9 +128,8 @@ public class PlayerController : MonoBehaviour
 
             isWallJumping = false; 
             wallJumpingDirection = -transform.localScale.x; // Sets the wallJump direction to the opposite of the players current direction.
-            wallJumpingCounter = wallJumpingTime;
-            
-            
+            wallJumpingCounter = wallJumpingTime;           
+
             CancelInvoke(nameof(StopWallJumping)); // Cancels the stop of the wallJump if the player is sliding on a wall, since we want the player to be cabable of wallJumping
         }
         else {
@@ -153,8 +142,7 @@ public class PlayerController : MonoBehaviour
             isWallJumping = true;
             rb2D.velocity = new Vector2(wallJumpingDirection * wallJumpingPower.x, wallJumpingPower.y); // Used to handle the players jump direction and velocity
             wallJumpingCounter = 0f;                                                                    // Since the player cannot wallJump again after they have already jumped, this sets that counter to zero
-            
-            
+
             if (transform.localScale.x != wallJumpingDirection) { // This part of the code ensures that the player is facing the correct direction following a walljump. Might be redundant due to how the players movement is setup
                 isFacingRight = !isFacingRight;
                 Vector3 localScale = transform.localScale;
@@ -162,8 +150,7 @@ public class PlayerController : MonoBehaviour
                 transform.localScale = localScale;
             }
 
-            StopCoroutine(DisableMovement(0f));
-            StartCoroutine(DisableMovement(0.1f));
+            Invoke(nameof(StopWallJumping), wallJumpingDuration); // Stops the player from wallJumping if they are no longer touching the wall after a short delay
 
         }
     }
@@ -172,15 +159,6 @@ public class PlayerController : MonoBehaviour
         isWallJumping = false; // Stops the player from wall jumping after they have already done so
     }
 
-    #endregion WallJump
-
-    private IEnumerator DisableMovement(float time) {
-        canMove = false;
-        yield return new WaitForSeconds(time);
-        canMove = true;
-        isWallJumping = false;
-    }
-    
     // TODO: Make this code work
     private void Flip() {
 
