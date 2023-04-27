@@ -6,6 +6,11 @@ public class PlayerController : MonoBehaviour
     public float moveSpeed = 10; // Used to allow changing of the players speed
     public float jumpForce = 10; // Used to allow changing of the players jumpheight and speed
 
+    private string runAnimation = "Run";
+    private string idleAnimation = "Idle";
+
+
+    Animator animation;
     public Transform groundCheck;
     public LayerMask groundLayer;
 
@@ -49,6 +54,7 @@ public class PlayerController : MonoBehaviour
     {
         rb2D = GetComponent<Rigidbody2D>();
         dashRender = GetComponent<TrailRenderer>();
+        animation = GetComponent<Animator>();
     }
 
 
@@ -57,6 +63,18 @@ public class PlayerController : MonoBehaviour
     {
         // Since update is the fastest way to check if something is happening, the input checks are placed here to make the game feel more repsonsive
         moveInput = Input.GetAxis("Horizontal");
+        if (moveInput != 0)
+        {
+            animation.Play(runAnimation);
+        }
+        else
+        {
+            animation.Play(idleAnimation);
+        }
+
+       
+
+
 
         CheckIfButtonPressed(); // Checks if a button has been pressed
         CheckIfGrounded(); // Checks if the player is on the ground
