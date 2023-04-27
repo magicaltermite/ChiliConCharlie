@@ -184,7 +184,7 @@ public class PlayerController : MonoBehaviour
     private bool IsWalled()
     {
         return
-            Physics2D.OverlapCircle(wallCheck.position, 0.2f,
+            Physics2D.OverlapCircle(wallCheck.position, wallCheck.GetComponent<CircleCollider2D>().radius,
                 wallLayer); // Creates a small circle around the wallcheck object on the player that checks if it is hitting a gameobject on the layer "WAll"
     }
 
