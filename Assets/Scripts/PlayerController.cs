@@ -8,8 +8,6 @@ public class PlayerController : MonoBehaviour
     const string idleAnimation = "Idle";
     const string runAnimation = "Run";
     const string jumpAnimation = "Jump";
-    const string postJumpAnimation = "Falling";
-    const string fallingAnimation = "Fall";
     const string attackAnimation = "Attack";
     const string kickAttackAnimation = "AttackKick";
     private string currentState = "Idle";
