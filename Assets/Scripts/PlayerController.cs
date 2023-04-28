@@ -3,34 +3,49 @@ using System.Collections;
 
 public class PlayerController : MonoBehaviour
 {
+    // Animation
+    Animator animation;
+    const string idleAnimation = "Idle";
+    const string runAnimation = "Run";
+    const string jumpAnimation = "Jump";
+    const string postJumpAnimation = "Falling";
+    const string fallingAnimation = "Fall";
+    const string attackAnimation = "Attack";
+    const string kickAttackAnimation = "AttackKick";
+    private string currentState = "Idle";
+    bool animationCheck = false;
+
+    [Header("Player Speeds")]
     public float moveSpeed = 10; // Used to allow changing of the players speed
     public float jumpForce = 10; // Used to allow changing of the players jumpheight and speed
-
-    private string runAnimation = "Run";
-    private string idleAnimation = "Idle";
-
-
-    Animator animation;
+    private const float AirTurnSpeedMultiplier = 20;
+    public float maxAirTurnSpeed = 5;
+    public float maxAirSpeed = 10;
+    public float wallSlidingSpeed = 2f;
+    [SerializeField] private Vector2 wallJumpingPower = new(8f, 16f);
+    private bool wallJumped = false;
+    
+    [Header("Ground Layer & Wall Layer + Ckeck")]
     public Transform groundCheck;
     public LayerMask groundLayer;
-
-    // Variables for making the wall jump work. The method comes from this video: https://www.youtube.com/watch?v=O6VX6Ro7EtA&t=237s
-    public float wallSlidingSpeed = 2f;
-
-    [SerializeField] private Vector2 wallJumpingPower = new(8f, 16f);
-
     [SerializeField]
-    private Transform
-        wallCheck; // Used to ensure that what the player is hitting is a wall, it is an empty gameobject put on the player, that is used in the WallSlide method
-
+    private Transform wallCheck;
     [SerializeField] private LayerMask wallLayer; // Used to store the wall layer 
+    // Variables for making the wall jump work. The method comes from this video: https://www.youtube.com/watch?v=O6VX6Ro7EtA&t=237s
+    
+
+    
+
+     // Used to ensure that what the player is hitting is a wall, it is an empty gameobject put on the player, that is used in the WallSlide method
+
+    
     private bool isFacingRight = true; // Used for flipping the player left or right
     private bool isGrounded; // Used for checking if the player is touching the ground
 
     private bool isWallJumping;
     private bool isWallSliding;
 
-    private TrailRenderer dashRender; // Storing the trail renderer for the dash
+    //private TrailRenderer dashRender; // Storing the trail renderer for the dash
 
     [Header("Dash")]
     [SerializeField] private float dashingVelocityX = 200; // Velocity of the dash, Serialized for easy changes
@@ -46,14 +61,14 @@ public class PlayerController : MonoBehaviour
     private float wallJumpingCounter;
     private float wallJumpingDirection;
     private readonly float wallJumpingDuration = 0.4f;
-    private readonly float wallJumpingTime = 0.2f;
+    private readonly float wallJumpingTime = 0.01f;
 
 
     // Start is called before the first frame update
     private void Start()
     {
         rb2D = GetComponent<Rigidbody2D>();
-        dashRender = GetComponent<TrailRenderer>();
+        //dashRender = GetComponent<TrailRenderer>();
         animation = GetComponent<Animator>();
     }
 
@@ -61,18 +76,18 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
+
+
+        //---------------------------------
+        //          Animation
+        //---------------------------------
+        AnimationParameters();
+        RunningAnimationControl();
+        Debug.Log(animationCheck);
+        //---------------------------------
+
         // Since update is the fastest way to check if something is happening, the input checks are placed here to make the game feel more repsonsive
         moveInput = Input.GetAxis("Horizontal");
-        if (moveInput != 0)
-        {
-            animation.Play(runAnimation);
-        }
-        else
-        {
-            animation.Play(idleAnimation);
-        }
-
-       
 
 
 
@@ -102,7 +117,7 @@ public class PlayerController : MonoBehaviour
 
 
 
-            dashRender.emitting = true; // Dash rederer will start emitting!
+            //dashRender.emitting = true; // Dash rederer will start emitting!
             dashingDir = new Vector2(dashDirX, 0); // And the direction is based on the input manager so directions from there
 
 
@@ -126,8 +141,9 @@ public class PlayerController : MonoBehaviour
         if (isGrounded)
         {
             canDash = true;
+            wallJumped = false;
         }
-    
+
 }
 
     private void FixedUpdate()
@@ -136,12 +152,14 @@ public class PlayerController : MonoBehaviour
 
         Move();
 
+
+
         // Used to check if the player can jump and they have pressed the jump button
         if (jumpCheck && isGrounded)
         {
             // This if statement determines if the player is allowed to jump, jump check is used to check if the player has pressed the jump button and
             // isGrounded is used to check if the player is touching the ground
-
+            ChangeAnimationState(jumpAnimation);
             rb2D.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
             jumpCheck = false;
         }
@@ -151,15 +169,22 @@ public class PlayerController : MonoBehaviour
     {
         yield return new WaitForSeconds(dashingTime); // Wait for the amount of time a dash takes
         Move();
-        dashRender.emitting = false; // Set the render emitting to false
+        //dashRender.emitting = false; // Set the render emitting to false
         isDashing = false; // and change the is dashing state from true to false
     }
 
     private void Move()
     {
-        if (isGrounded)
+        if (isGrounded){
             // Used to make the player move
             rb2D.velocity = new Vector2(moveInput * moveSpeed, rb2D.velocity.y);
+        }
+        if(!isGrounded&&!IsWalled()&&!wallJumped)
+        {
+            rb2D.AddForce(new Vector2(((Mathf.Clamp(moveInput*AirTurnSpeedMultiplier,-maxAirTurnSpeed,maxAirTurnSpeed))),0));
+            rb2D.velocity = new Vector2(Mathf.Clamp(rb2D.velocity.x, -maxAirSpeed, maxAirSpeed), rb2D.velocity.y);
+            //new Vector2(Mathf.Clamp((Mathf.Clamp(moveInput,-1f,1f))*4,-10f,10f),rb2D.velocity.y);
+        }
     }
 
     private void CheckIfButtonPressed()
@@ -194,7 +219,9 @@ public class PlayerController : MonoBehaviour
         if (IsWalled() && !isGrounded && moveInput != 0f)
         {
             // Here is checkked if the isWalled methods returns true and the player is not grounded and their current move input is not 0, meaning they are pressing a direction
-
+            if(Input.GetKeyDown(KeyCode.Space)){
+                ChangeAnimationState(jumpAnimation);
+            }
             isWallSliding = true; // Sets the wallSliding to true
             rb2D.velocity = new Vector2(rb2D.velocity.x,
                 Mathf.Clamp(rb2D.velocity.y, -wallSlidingSpeed,
@@ -213,24 +240,20 @@ public class PlayerController : MonoBehaviour
             // This if else statement is there to give the player a short window of time after they have stopped touching the wall to still walljump, making the jump feel a little more forgiving
 
             isWallJumping = false;
-            wallJumpingDirection =
-                -transform.localScale
-                    .x; // Sets the wallJump direction to the opposite of the players current direction.
+            wallJumpingDirection = -transform.localScale.x; // Sets the wallJump direction to the opposite of the players current direction.
             wallJumpingCounter = wallJumpingTime;
 
-            CancelInvoke(
-                nameof(StopWallJumping)); // Cancels the stop of the wallJump if the player is sliding on a wall, since we want the player to be cabable of wallJumping
+            CancelInvoke(nameof(StopWallJumping)); // Cancels the stop of the wallJump if the player is sliding on a wall, since we want the player to be cabable of wallJumping
         }
         else
         {
-            wallJumpingCounter -=
-                Time.deltaTime; // this counts down the counter, so that the player has a short window of time to wallJump even after they are no longer touching the wall
+            wallJumpingCounter -= Time.deltaTime; // this counts down the counter, so that the player has a short window of time to wallJump even after they are no longer touching the wall
         }
 
         if (Input.GetKeyDown(KeyCode.Space) && wallJumpingCounter > 0f)
         {
             // Checks if the player presses the jump button and if the wallJumpingCounter is greater than zero, since that means the player is allowed to wallJump
-
+            wallJumped = true;
             isWallJumping = true;
             rb2D.velocity =
                 new Vector2(wallJumpingDirection * wallJumpingPower.x,
@@ -270,4 +293,90 @@ public class PlayerController : MonoBehaviour
             transform.localScale = localScale; // Flips the players localScale
         }
     }
+
+    private void RunningAnimationControl(){
+        if(moveInput==0&&isGrounded){
+            ChangeAnimationState(idleAnimation);
+        }else if (moveInput != 0&&isGrounded){
+            ChangeAnimationState(runAnimation);
+        }
+    }
+
+    private void AnimationParameters()
+    {
+       
+        // Holder øje med Chilis y.velocity
+        animation.SetFloat("yVelocity",rb2D.velocity.y);
+
+        // Animation Parameter som ser om Chili er grounded
+        if(isGrounded){
+            animation.SetBool("isGrounded", true);
+        }else{
+            animation.SetBool("isGrounded", false);
+        }
+
+        // Animation Parameter som tjekker for spiller-input
+        if(moveInput==0){
+            animation.SetBool("movementInput", false);
+        }else{
+             animation.SetBool("movementInput", true);
+        }
+
+        // Animation Parameter som tjekker om Chili rør en væg
+        if(IsWalled()){
+            animation.SetBool("isWalled",true);
+        } else {
+            animation.SetBool("isWalled",false);
+        }
+        
+        // Animation Parameter som tjekker om man angriber og hvor mange gange man trykker
+        if(Input.GetKeyDown(KeyCode.P)&&!animationCheck)
+        {
+            ChangeAnimationState(attackAnimation);
+        }
+        
+         try
+        {
+            if(animation.GetCurrentAnimatorClipInfo(0)[0].clip.name==attackAnimation)
+            {
+                animationCheck = true;
+            }   
+            else if (animation.GetCurrentAnimatorClipInfo(0)[0].clip.name!=attackAnimation&&animation.GetCurrentAnimatorClipInfo(0)[0].clip.name!=kickAttackAnimation)
+            {
+                animationCheck = false;
+            }
+            
+            if(animationCheck&&Input.GetKeyDown(KeyCode.P))
+            {
+            animation.SetBool("QuedAttack",true);
+            }
+
+            if(animation.GetCurrentAnimatorClipInfo(0)[0].clip.name==kickAttackAnimation)
+            {
+                animation.SetBool("QuedAttack",false);
+                animationCheck = false;
+            }
+                
+
+        }
+        catch (System.IndexOutOfRangeException e)
+        {
+            System.Console.WriteLine("An Error has occurred : {0}",e.Message);
+        }
+    }
+        
+
+        
+
+    private void ChangeAnimationState(string newState)
+    {
+        if(currentState == newState) return;
+
+        animation.Play(newState);
+
+        currentState = newState;
+    }
+
+
+
 }
