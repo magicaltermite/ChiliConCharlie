@@ -43,7 +43,7 @@ public class PlayerController : MonoBehaviour
     private bool isWallJumping;
     private bool isWallSliding;
 
-    //private TrailRenderer dashRender; // Storing the trail renderer for the dash
+ 
 
     [Header("Dash")]
     [SerializeField] private float dashingVelocityX = 200; // Velocity of the dash, Serialized for easy changes
@@ -54,6 +54,7 @@ public class PlayerController : MonoBehaviour
     private bool canDash = true; // Checking if the character is in a state where they CAN dash 
     private bool jumpCheck; // This variable is used to check if the jump button is pressed
     private float moveInput; // Used for storing the movement input, so that it can be taken from update to fixedupdate
+    private TrailRenderer dashRender; // Storing the trail renderer for the dash
 
     private Rigidbody2D rb2D;
     private float wallJumpingCounter;
@@ -66,7 +67,7 @@ public class PlayerController : MonoBehaviour
     private void Start()
     {
         rb2D = GetComponent<Rigidbody2D>();
-        //dashRender = GetComponent<TrailRenderer>();
+        dashRender = GetComponent<TrailRenderer>();
         animation = GetComponent<Animator>();
     }
 
@@ -115,7 +116,7 @@ public class PlayerController : MonoBehaviour
 
 
 
-            //dashRender.emitting = true; // Dash rederer will start emitting!
+            dashRender.emitting = true; // Dash rederer will start emitting!
             dashingDir = new Vector2(dashDirX, 0); // And the direction is based on the input manager so directions from there
 
 
@@ -167,7 +168,7 @@ public class PlayerController : MonoBehaviour
     {
         yield return new WaitForSeconds(dashingTime); // Wait for the amount of time a dash takes
         Move();
-        //dashRender.emitting = false; // Set the render emitting to false
+        dashRender.emitting = false; // Set the render emitting to false
         isDashing = false; // and change the is dashing state from true to false
     }
 
