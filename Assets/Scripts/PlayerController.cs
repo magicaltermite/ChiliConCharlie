@@ -16,12 +16,11 @@ public class PlayerController : MonoBehaviour
     [Header("Player Speeds")]
     public float moveSpeed = 10; // Used to allow changing of the players speed
     public float jumpForce = 10; // Used to allow changing of the players jumpheight and speed
-    private const float AirTurnSpeedMultiplier = 20;
-    public float maxAirTurnSpeed = 5;
+    public float AirTurnSpeedMultiplier = 20;
     public float maxAirSpeed = 10;
     public float wallSlidingSpeed = 2f;
     [SerializeField] private Vector2 wallJumpingPower = new(8f, 16f);
-    private bool wallJumped = false;
+    private bool wallJumped;
     
     [Header("Ground Layer & Wall Layer + Ckeck")]
     public Transform groundCheck;
@@ -60,7 +59,7 @@ public class PlayerController : MonoBehaviour
     private float wallJumpingCounter;
     private float wallJumpingDirection;
     private readonly float wallJumpingDuration = 0.4f;
-    private readonly float wallJumpingTime = 0.01f;
+    private readonly float wallJumpingTime = 0.03f;
 
 
     // Start is called before the first frame update
@@ -143,7 +142,7 @@ public class PlayerController : MonoBehaviour
             wallJumped = false;
         }
 
-}
+    }
 
     private void FixedUpdate()
     {
@@ -178,11 +177,10 @@ public class PlayerController : MonoBehaviour
             // Used to make the player move
             rb2D.velocity = new Vector2(moveInput * moveSpeed, rb2D.velocity.y);
         }
-        if(!isGrounded&&!IsWalled()&&!wallJumped)
+        if(!isGrounded)
         {
-            rb2D.AddForce(new Vector2(((Mathf.Clamp(moveInput*AirTurnSpeedMultiplier,-maxAirTurnSpeed,maxAirTurnSpeed))),0));
-            rb2D.velocity = new Vector2(Mathf.Clamp(rb2D.velocity.x, -maxAirSpeed, maxAirSpeed), rb2D.velocity.y);
-            //new Vector2(Mathf.Clamp((Mathf.Clamp(moveInput,-1f,1f))*4,-10f,10f),rb2D.velocity.y);
+            rb2D.AddForce(new Vector2(Mathf.Clamp(moveInput*AirTurnSpeedMultiplier,-maxAirSpeed,maxAirSpeed),0));
+           
         }
     }
 
