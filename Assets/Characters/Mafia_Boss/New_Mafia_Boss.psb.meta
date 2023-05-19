@@ -108,7 +108,7 @@ ScriptedImporter:
     spriteBone:
     - name: Head
       guid: 7ce428f27c244b14da98205bc872ee21
-      position: {x: 425.39722, y: -61.118958, z: 0}
+      position: {x: 425.39722, y: -61.118896, z: 0}
       rotation: {x: 0, y: 0, z: 0.7048647, w: 0.7093419}
       length: 620.69116
       parentId: -1
@@ -1776,13 +1776,22 @@ ScriptedImporter:
     spriteBone:
     - name: Head
       guid: 7ce428f27c244b14da98205bc872ee21
-      position: {x: 477.39722, y: 610.8811, z: 0}
-      rotation: {x: 0, y: 0, z: 0.7048647, w: 0.7093419}
-      length: 620.69116
-      parentId: -1
+      position: {x: 212.14038, y: -0.0000027547153, z: 0}
+      rotation: {x: 0, y: 0, z: -0.007795298, w: 0.99996966}
+      length: 620.6912
+      parentId: 1
       color:
         serializedVersion: 2
         rgba: 4278255615
+    - name: Base
+      guid: 21f9f4e855eb7bf4bb5602716d8e5839
+      position: {x: 479.3614, y: 398.75, z: 0}
+      rotation: {x: 0, y: 0, z: 0.71037275, w: 0.70382565}
+      length: 212.14017
+      parentId: -1
+      color:
+        serializedVersion: 2
+        rgba: 4278190335
     spriteOutline: []
     vertices:
     - position: {x: 485.5, y: 235.5}
@@ -2874,7 +2883,7 @@ ScriptedImporter:
     spriteBone:
     - name: Head
       guid: 7ce428f27c244b14da98205bc872ee21
-      position: {x: 539.3972, y: 204.88104, z: 0}
+      position: {x: 539.3972, y: 204.8811, z: 0}
       rotation: {x: 0, y: 0, z: 0.7048647, w: 0.7093419}
       length: 620.69116
       parentId: -1
@@ -3182,14 +3191,14 @@ ScriptedImporter:
       guid: 21f9f4e855eb7bf4bb5602716d8e5839
       position: {x: 541.3614, y: 468.75, z: 0}
       rotation: {x: 0, y: 0, z: 0.71037275, w: 0.70382565}
-      length: 212.14009
+      length: 212.14015
       parentId: -1
       color:
         serializedVersion: 2
         rgba: 4278190335
     - name: Head
       guid: 7ce428f27c244b14da98205bc872ee21
-      position: {x: 212.1401, y: -0.00003106957, z: 0}
+      position: {x: 212.14017, y: -0.000031634685, z: 0}
       rotation: {x: 0, y: 0, z: -0.007795298, w: 0.99996966}
       length: 620.6913
       parentId: 0
@@ -3311,7 +3320,7 @@ ScriptedImporter:
         width: 1021
         height: 1067
       spriteId: f42eac12204c6f5429e79158e8c13a93
-      bones: 01000000
+      bones: 0100000000000000
       parentGroup: 0
       order: 0
     - spritePosition:
