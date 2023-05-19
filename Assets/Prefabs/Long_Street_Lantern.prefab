@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8662439256824839521}
   - component: {fileID: 3672330282029066573}
   - component: {fileID: 532041497423699732}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Long_Street_Lantern
   m_TagString: Untagged
   m_Icon: {fileID: 0}
