@@ -8,7 +8,8 @@ public class Dialogue : MonoBehaviour
     public TextMeshProUGUI textComponent;
     public string[] lines;
     public float textSpeed;
-
+    public GameObject canvas;
+    
     private int index;
 
     // Start is called before the first frame update
@@ -45,6 +46,7 @@ public class Dialogue : MonoBehaviour
     {
         foreach (char c in lines[index].ToCharArray())
         {
+
             textComponent.text += c;
             yield return new WaitForSeconds(textSpeed);
         }
@@ -60,7 +62,9 @@ public class Dialogue : MonoBehaviour
         }
         else
         {
+            canvas.SetActive(false);
             gameObject.SetActive(false);
         }
     }
+    
 }
