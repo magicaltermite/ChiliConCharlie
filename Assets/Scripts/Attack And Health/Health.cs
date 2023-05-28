@@ -7,19 +7,21 @@ public class Health : MonoBehaviour
     private const string Hit_Animation = "Zombie_Hit";
     [SerializeField] private int health = 100; // The amount of health the unit has
 
+    private Animator animator;
+
+    private string currentState;
 
     private bool hit = false;
 
     // Start is called before the first frame update
     private void Start()
     {
-        
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
     private void Update()
     {
-        
     }
 
 
@@ -32,10 +34,6 @@ public class Health : MonoBehaviour
         health -= damage; // This script is made to allow someone to damage this character
         animator.SetTrigger("HitTrigger");
         if (health <= 0) Kill();
-
-        if (health <= 0) {
-            Kill();
-        }
     }
 
     private void ChangeAnimationState(string newState)
@@ -45,7 +43,6 @@ public class Health : MonoBehaviour
         animator.Play(newState);
         currentState = newState;
     }
-
 
     private void Kill()
     {
