@@ -62,6 +62,12 @@ public class PlayerController : MonoBehaviour
     private readonly float wallJumpingTime = 0.03f;
 
 
+    [Header("Dash")]
+    public float cooldownTime = 0.5f; // The cooldown time for the bullet
+    private bool canShoot = true;
+    [SerializeField] private GameObject bulletprefab;
+
+
     // Start is called before the first frame update
     private void Start()
     {
@@ -142,6 +148,13 @@ public class PlayerController : MonoBehaviour
             wallJumped = false;
         }
 
+
+        if (canShoot && Input.GetKeyDown(KeyCode.X))
+        {
+            Shoot();
+            StartCoroutine(Cooldown());
+        }
+
     }
 
     private void FixedUpdate()
@@ -170,6 +183,26 @@ public class PlayerController : MonoBehaviour
         dashRender.emitting = false; // Set the render emitting to false
         isDashing = false; // and change the is dashing state from true to false
     }
+
+
+    // Shoot method
+    private void Shoot()
+    {
+        GameObject bullet = Instantiate(bulletprefab, transform.position, Quaternion.identity);
+        bullet.GetComponent<Rigidbody2D>().velocity = new Vector2(10f, 0f);
+
+
+    }
+
+    //Coroutine, cooldown for the bullet
+    IEnumerator Cooldown()
+    {
+        canShoot = false;
+        yield return new WaitForSeconds(cooldownTime);
+        canShoot = true;
+    }
+
+
 
     private void Move()
     {
