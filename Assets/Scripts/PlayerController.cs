@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
     const string jumpAnimation = "Jump";
     const string attackAnimation = "Attack";
     const string kickAttackAnimation = "AttackKick";
+    const string shootAnimation = "Shoot"; 
     private string currentState = "Idle";
     bool animationCheck = false;
 
@@ -149,6 +150,7 @@ public class PlayerController : MonoBehaviour
         }
 
 
+        // ----------------SHOOT------------
         if (canShoot && Input.GetKeyDown(KeyCode.X))
         {
             Shoot();
@@ -364,8 +366,16 @@ public class PlayerController : MonoBehaviour
         {
             ChangeAnimationState(attackAnimation);
         }
-        
-         try
+
+        // Animation Parameter som tjekker om man skyder
+         if(Input.GetKeyDown(KeyCode.X)&&!animationCheck)
+        {
+            ChangeAnimationState(shootAnimation);
+        }
+         
+           
+
+        try
         {
             if(animation.GetCurrentAnimatorClipInfo(0)[0].clip.name==attackAnimation)
             {
