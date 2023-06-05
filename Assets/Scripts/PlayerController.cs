@@ -155,7 +155,8 @@ public class PlayerController : MonoBehaviour
         // Used to check if the player can jump and they have pressed the jump button
         if (jumpCheck && isGrounded)
         {
-            // This if statement determines if the player is allowed to jump, jump check is used to check if the player has pressed the jump button and
+            // This if statement determines if the player is allowed to jump,
+            // jump check is used to check if the player has pressed the jump button and
             // isGrounded is used to check if the player is touching the ground
             ChangeAnimationState(jumpAnimation);
             rb2D.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
@@ -327,7 +328,7 @@ public class PlayerController : MonoBehaviour
         }
         
         // Animation Parameter som tjekker om man angriber og hvor mange gange man trykker
-        if(Input.GetKeyDown(KeyCode.P)&&!animationCheck)
+        if(Input.GetKeyDown(KeyCode.J)&&!animationCheck)
         {
             ChangeAnimationState(attackAnimation);
         }
@@ -343,7 +344,7 @@ public class PlayerController : MonoBehaviour
                 animationCheck = false;
             }
             
-            if(animationCheck&&Input.GetKeyDown(KeyCode.P))
+            if(animationCheck&&Input.GetKeyDown(KeyCode.J))
             {
             animation.SetBool("QuedAttack",true);
             }

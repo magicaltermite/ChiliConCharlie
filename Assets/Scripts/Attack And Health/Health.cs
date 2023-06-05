@@ -1,18 +1,21 @@
 using System;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Health : MonoBehaviour
 {
     private const string Walk_Animation = "ZombieWalking";
     private const string Hit_Animation = "Zombie_Hit";
+    private const string _deathAnimation = "DeathAnimation";
     [SerializeField] private int health = 100; // The amount of health the unit has
 
     private Animator animator;
 
     private string currentState;
 
-    private bool hit = false;
+    public bool isHit = false;
 
+    public bool isDead = false;
     // Start is called before the first frame update
     private void Start()
     {
@@ -33,6 +36,8 @@ public class Health : MonoBehaviour
 
         health -= damage; // This script is made to allow someone to damage this character
         animator.SetTrigger("HitTrigger");
+        isHit = true;
+        Invoke(nameof(HitReset),0.6f);
         if (health <= 0) Kill();
     }
 
@@ -46,6 +51,21 @@ public class Health : MonoBehaviour
 
     private void Kill()
     {
+        isDead = true;
+        ChangeAnimationState(_deathAnimation);
+        Invoke(nameof(RemoveEnemy), 1.5f);
+    }
+
+    private void RemoveEnemy()
+    {
         gameObject.SetActive(false);
+    }
+    
+    private void HitReset()
+    {
+        if (isHit)
+        {
+            isHit = false;
+        }
     }
 }

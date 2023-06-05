@@ -6,6 +6,7 @@ public class Enemy : MonoBehaviour
 {
     public List<Transform> points;
 
+    private Health healthScript;
     //The int value for next point index
     public int nextID;
 
@@ -23,6 +24,7 @@ public class Enemy : MonoBehaviour
 
     private void Init()
     {
+        
         GetComponent<BoxCollider2D>().isTrigger = true;
         GetComponent<Rigidbody2D>().sleepMode = RigidbodySleepMode2D.NeverSleep;
         gameObject.tag = "Enemy";
@@ -55,11 +57,13 @@ public class Enemy : MonoBehaviour
 
     private void Start()
     {
+        healthScript = GetComponent<Health>();
     }
 
     private void Update()
     {
-        MoveToNextPoint();
+        if(!healthScript.isHit&&!healthScript.isDead)
+            MoveToNextPoint();
     }
 
     private void MoveToNextPoint()
