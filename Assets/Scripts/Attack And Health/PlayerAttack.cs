@@ -10,7 +10,7 @@ public class PlayerAttack : MonoBehaviour
         attackTime =
             0.25f; // This keeps track of how long the players damage area should stay attack, by having it take a bit of time to go away,
 
-    private bool isAttacking; // This allows the player to deal damage in an area for a given time
+    private bool isAttacking = false; // This allows the player to deal damage in an area for a given time
 
     // the attack timing becomes more lenient
     private float timer; // This timer keeps track of how much time has passed since the player started attacking
