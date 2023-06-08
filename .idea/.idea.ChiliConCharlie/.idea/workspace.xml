@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="70bc6483-e1f7-4acf-8604-1651f0d9e828" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ChiliConCharlie/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ChiliConCharlie/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/DialogueTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/DialogueTrigger.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Scenes/IntroCutscene.playable" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Scenes/IntroCutscene.playable" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Scenes/IntroCutscene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Scenes/IntroCutscene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DialogueScript/Dialogue.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DialogueScript/Dialogue.cs" afterDir="false" />
-    </list>
+    <list default="true" id="70bc6483-e1f7-4acf-8604-1651f0d9e828" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -107,7 +101,7 @@
       <workItem from="1686067527207" duration="640000" />
       <workItem from="1686231636119" duration="4581000" />
       <workItem from="1686247804431" duration="2292000" />
-      <workItem from="1686250485758" duration="629000" />
+      <workItem from="1686250485758" duration="714000" />
     </task>
     <servers />
   </component>

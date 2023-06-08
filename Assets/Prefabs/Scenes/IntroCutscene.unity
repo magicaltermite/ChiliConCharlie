@@ -7653,6 +7653,33 @@ PrefabInstance:
       propertyPath: textComponent
       value: 
       objectReference: {fileID: 1811319844}
+    - target: {fileID: 1273754834, guid: 242a15e64c25dc0449ac9a012a39aafa, type: 3}
+      propertyPath: lines.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1273754834, guid: 242a15e64c25dc0449ac9a012a39aafa, type: 3}
+      propertyPath: lines.Array.data[0]
+      value: "AZY SHITAre you nuts!? What on earth do you think you\u2019re doing!?
+        People are dying and being turned into monsters, YOUR people, but you still
+        refuse to help! Why!?IT"
+      objectReference: {fileID: 0}
+    - target: {fileID: 1273754834, guid: 242a15e64c25dc0449ac9a012a39aafa, type: 3}
+      propertyPath: lines.Array.data[1]
+      value: Get outta here you dumb fruit or whatever >:(
+      objectReference: {fileID: 0}
+    - target: {fileID: 1273754834, guid: 242a15e64c25dc0449ac9a012a39aafa, type: 3}
+      propertyPath: lines.Array.data[2]
+      value: Fine! But mark my words, one day, justice will prevail, and you'll pay
+        for supporting the king and his wickedness!
+      objectReference: {fileID: 0}
+    - target: {fileID: 1273754834, guid: 242a15e64c25dc0449ac9a012a39aafa, type: 3}
+      propertyPath: lines.Array.data[3]
+      value: OY! You mischievous little thief! Get back here!!
+      objectReference: {fileID: 0}
+    - target: {fileID: 1273754834, guid: 242a15e64c25dc0449ac9a012a39aafa, type: 3}
+      propertyPath: lines.Array.data[4]
+      value: "Uwaaaaah :\u2019( Please sir, don\u2019t hurt me"
+      objectReference: {fileID: 0}
     - target: {fileID: 1273754835, guid: 242a15e64c25dc0449ac9a012a39aafa, type: 3}
       propertyPath: canvas
       value: 
@@ -7663,11 +7690,16 @@ PrefabInstance:
       objectReference: {fileID: 1387204793}
     - target: {fileID: 1273754835, guid: 242a15e64c25dc0449ac9a012a39aafa, type: 3}
       propertyPath: endLines.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1273754835, guid: 242a15e64c25dc0449ac9a012a39aafa, type: 3}
       propertyPath: endLines.Array.data[0]
-      value: MAYBE THE CRAZIEST SHIT YET
+      value: Fine! But mark my words, one day, justice will prevail, and you'll pay
+        for supporting the king and his wickedness!
+      objectReference: {fileID: 0}
+    - target: {fileID: 1273754835, guid: 242a15e64c25dc0449ac9a012a39aafa, type: 3}
+      propertyPath: endLines.Array.data[1]
+      value: "Uwaaaaah :\u2019( Please sir, don\u2019t hurt me"
       objectReference: {fileID: 0}
     - target: {fileID: 4370038043478442473, guid: 242a15e64c25dc0449ac9a012a39aafa, type: 3}
       propertyPath: m_Name
