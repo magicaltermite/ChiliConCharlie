@@ -31,12 +31,12 @@ public class DialogueTrigger : MonoBehaviour {
         if (activate && !canvas.activeInHierarchy) {
             canvas.SetActive(true);
             GetComponent<Dialogue>().enabled = true;
-            timeLine.GetComponent<PlayableDirector>().Pause();
+            timeLine.GetComponent<PlayableDirector>().playableGraph.GetRootPlayable(0).SetSpeed(0);
         }
         else if(!activate && canvas.activeInHierarchy) {
             canvas.SetActive(false);
             GetComponent<Dialogue>().enabled = false;
-            timeLine.GetComponent<PlayableDirector>().Play();
+            timeLine.GetComponent<PlayableDirector>().playableGraph.GetRootPlayable(0).SetSpeed(1);
         }
 
     }
