@@ -6,7 +6,7 @@ public class PlayerAudioManager : MonoBehaviour {
     
     [SerializeField] private AudioSource walkSound;
     [SerializeField] private AudioSource jumpSound;
-    [SerializeField] private AudioSource landSound;
+    [SerializeField] private AudioSource attackSound;
 
     
     void WalkSound() {
@@ -20,7 +20,11 @@ public class PlayerAudioManager : MonoBehaviour {
         jumpSound.Play();
     }
 
-    public void LandSound() {
-        landSound.Play();
+
+    void AttackSound() {
+        attackSound.pitch = Random.Range(0.8f, 1.2f);
+        attackSound.Play();
     }
+
+   
 }

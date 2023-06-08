@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="70bc6483-e1f7-4acf-8604-1651f0d9e828" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/ChangeSceneOnTimer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ChangeSceneOnTimer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Chibi Con Charlie.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Chibi Con Charlie.prefab" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,6 +30,22 @@
   }
 }</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="F:\Unity\2021.3.19f1\Editor\Unity.exe" />
+      <option name="PROGRAM_PARAMETERS" value="-projectPath F:\Unity\Projects\ChiliConCharlie -debugCodeOptimization" />
+      <option name="WORKING_DIRECTORY" value="F:\Unity\Projects\ChiliConCharlie" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unit Tests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="F:\Unity\2021.3.19f1\Editor\Unity.exe" />
+      <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath F:\Unity\Projects\ChiliConCharlie -testResults Logs/results.xml -testPlatform EditMode -debugCodeOptimization" />
+      <option name="WORKING_DIRECTORY" value="F:\Unity\Projects\ChiliConCharlie" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <method v="2" />
+    </configuration>
     <configuration name="UnitTests (batch mode)" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2021.3.19f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-runTests -batchmode -projectPath &quot;C:\Users\johan\Desktop\Unity Projects\Unity Repository\ChiliConCharlie&quot; -testResults Logs/results.xml -testPlatform EditMode -debugCodeOptimization" />
@@ -72,6 +88,7 @@
       <workItem from="1680093346260" duration="11054000" />
       <workItem from="1686067527207" duration="640000" />
       <workItem from="1686247755958" duration="3282000" />
+      <workItem from="1686255891632" duration="1000" />
     </task>
     <servers />
   </component>
