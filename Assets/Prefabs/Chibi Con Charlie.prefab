@@ -295,6 +295,7 @@ GameObject:
   - component: {fileID: 3690192845221330201}
   - component: {fileID: 1741960758214604689}
   - component: {fileID: 6609642431978888918}
+  - component: {fileID: 1300476114}
   m_Layer: 0
   m_Name: Chibi Con Charlie
   m_TagString: Player
@@ -428,7 +429,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 897c79b9aba8db243a7d17976a2be252, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackArea: {fileID: 0}
+  attackArea: {fileID: 8967120400294875855}
 --- !u!61 &7843232273825519706
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -598,7 +599,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkSound: {fileID: 1741960758214604689}
   jumpSound: {fileID: 6609642431978888918}
-  landSound: {fileID: 0}
+  attackSound: {fileID: 1300476114}
 --- !u!82 &1741960758214604689
 AudioSource:
   m_ObjectHideFlags: 0
@@ -610,7 +611,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: fe4e1d77b04a25d4bb6257c90216375f, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -706,8 +707,104 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 2fba2d855c516d6468f0a918d298994c, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!82 &1300476114
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2032366883539204535}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 7424e6567afafb44c8d849c1e9143041, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 0.75
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -864,7 +961,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1395986169
   m_SortingLayer: 2
-  m_SortingOrder: 6
+  m_SortingOrder: 19
   m_Sprite: {fileID: -783046389271296190, guid: 8da0657b4c73a9d49a6a9d9e68d447cb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1194,7 +1291,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1395986169
   m_SortingLayer: 2
-  m_SortingOrder: 3
+  m_SortingOrder: 18
   m_Sprite: {fileID: -3274060074289408992, guid: 8da0657b4c73a9d49a6a9d9e68d447cb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -1720,7 +1817,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1395986169
   m_SortingLayer: 2
-  m_SortingOrder: 5
+  m_SortingOrder: 21
   m_Sprite: {fileID: 227030455980644942, guid: 8da0657b4c73a9d49a6a9d9e68d447cb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2097,7 +2194,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1395986169
   m_SortingLayer: 2
-  m_SortingOrder: 4
+  m_SortingOrder: 20
   m_Sprite: {fileID: -3201445341876967126, guid: 8da0657b4c73a9d49a6a9d9e68d447cb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2401,7 +2498,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1395986169
   m_SortingLayer: 2
-  m_SortingOrder: 0
+  m_SortingOrder: 16
   m_Sprite: {fileID: -529278286442022204, guid: 8da0657b4c73a9d49a6a9d9e68d447cb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2458,7 +2555,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8933697715828365910}
-  m_LocalRotation: {x: -0, y: -0, z: -0.026175687, w: 0.99965733}
+  m_LocalRotation: {x: -0, y: -0, z: -0.026175689, w: 0.9996574}
   m_LocalPosition: {x: 0.34944093, y: -0.005045638, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -2539,7 +2636,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: -1395986169
   m_SortingLayer: 2
-  m_SortingOrder: 1
+  m_SortingOrder: 17
   m_Sprite: {fileID: -1316915516671536500, guid: 8da0657b4c73a9d49a6a9d9e68d447cb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2629,7 +2726,7 @@ CircleCollider2D:
   m_GameObject: {fileID: 8967120400294875855}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 90acd3115d112064584052b8bd25847e, type: 2}
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0

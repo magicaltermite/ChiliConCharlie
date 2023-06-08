@@ -2241,6 +2241,10 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: 0.71377647
       objectReference: {fileID: 0}
+    - target: {fileID: 1741960758214604689, guid: 2a68b737c2548f2469c514306838e2d8, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1802036380488608140, guid: 2a68b737c2548f2469c514306838e2d8, type: 3}
       propertyPath: m_LocalRotation.w
       value: 0.8870075
@@ -2325,6 +2329,10 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: -0.14328162
       objectReference: {fileID: 0}
+    - target: {fileID: 3690192845221330201, guid: 2a68b737c2548f2469c514306838e2d8, type: 3}
+      propertyPath: attackSound
+      value: 
+      objectReference: {fileID: 343903095}
     - target: {fileID: 3754114218938384054, guid: 2a68b737c2548f2469c514306838e2d8, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0.3596835
@@ -2452,6 +2460,10 @@ PrefabInstance:
     - target: {fileID: 6414491294101189553, guid: 2a68b737c2548f2469c514306838e2d8, type: 3}
       propertyPath: m_LocalRotation.z
       value: 0.00015252827
+      objectReference: {fileID: 0}
+    - target: {fileID: 6609642431978888918, guid: 2a68b737c2548f2469c514306838e2d8, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6679045726905279654, guid: 2a68b737c2548f2469c514306838e2d8, type: 3}
       propertyPath: m_Enabled
@@ -2755,6 +2767,107 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &343903086 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2032366883539204535, guid: 2a68b737c2548f2469c514306838e2d8, type: 3}
+  m_PrefabInstance: {fileID: 231280656}
+  m_PrefabAsset: {fileID: 0}
+--- !u!82 &343903095
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 343903086}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1001 &347004550
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2857,6 +2970,22 @@ PrefabInstance:
     - target: {fileID: 1410091330767702403, guid: d3c75a3bd71a9b74f93c7fee30db6f80, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: -1.3764648
+      objectReference: {fileID: 0}
+    - target: {fileID: 1410091332224797893, guid: d3c75a3bd71a9b74f93c7fee30db6f80, type: 3}
+      propertyPath: m_margin.w
+      value: -107.223206
+      objectReference: {fileID: 0}
+    - target: {fileID: 1410091332224797893, guid: d3c75a3bd71a9b74f93c7fee30db6f80, type: 3}
+      propertyPath: m_margin.x
+      value: -214.49811
+      objectReference: {fileID: 0}
+    - target: {fileID: 1410091332224797893, guid: d3c75a3bd71a9b74f93c7fee30db6f80, type: 3}
+      propertyPath: m_margin.y
+      value: -33.948456
+      objectReference: {fileID: 0}
+    - target: {fileID: 1410091332224797893, guid: d3c75a3bd71a9b74f93c7fee30db6f80, type: 3}
+      propertyPath: m_margin.z
+      value: -746.0051
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d3c75a3bd71a9b74f93c7fee30db6f80, type: 3}
@@ -7747,26 +7876,26 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1273754834, guid: 242a15e64c25dc0449ac9a012a39aafa, type: 3}
       propertyPath: lines.Array.data[0]
-      value: "Are you nuts!? What on earth do you think you\u2019re doing!? People
-        are dying and being turned into monsters, YOUR people, but you still refuse
-        to help! Why!?"
+      value: "Chili Con Charlie<br>Are you nuts!? What on earth do you think you\u2019re
+        doing!? People are dying and being turned into monsters, YOUR people, but
+        you still refuse to help! Why!?"
       objectReference: {fileID: 0}
     - target: {fileID: 1273754834, guid: 242a15e64c25dc0449ac9a012a39aafa, type: 3}
       propertyPath: lines.Array.data[1]
-      value: Get outta here you dumb fruit or whatever >:(
+      value: Walnut Guard<br>Get outta here you dumb fruit or whatever >:(
       objectReference: {fileID: 0}
     - target: {fileID: 1273754834, guid: 242a15e64c25dc0449ac9a012a39aafa, type: 3}
       propertyPath: lines.Array.data[2]
-      value: Fine! But mark my words, one day, justice will prevail, and you'll pay
-        for supporting the king and his wickedness!
+      value: Chili Con Charlie<br>Fine! But mark my words, one day, justice will
+        prevail, and you'll pay for supporting the king and his wickedness!
       objectReference: {fileID: 0}
     - target: {fileID: 1273754834, guid: 242a15e64c25dc0449ac9a012a39aafa, type: 3}
       propertyPath: lines.Array.data[3]
-      value: OY! You mischievous little thief! Get back here!!
+      value: Chili Con Charlie<br>OY! You mischievous little thief! Get back here!!
       objectReference: {fileID: 0}
     - target: {fileID: 1273754834, guid: 242a15e64c25dc0449ac9a012a39aafa, type: 3}
       propertyPath: lines.Array.data[4]
-      value: "Uwaaaaah :\u2019( Please sir, don\u2019t hurt me"
+      value: "mischievous Lime<br>Uwaaaaah :\u2019( Please sir, don\u2019t hurt me"
       objectReference: {fileID: 0}
     - target: {fileID: 1273754835, guid: 242a15e64c25dc0449ac9a012a39aafa, type: 3}
       propertyPath: canvas
@@ -7782,12 +7911,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1273754835, guid: 242a15e64c25dc0449ac9a012a39aafa, type: 3}
       propertyPath: endLines.Array.data[0]
-      value: Fine! But mark my words, one day, justice will prevail, and you'll pay
-        for supporting the king and his wickedness!
+      value: Chili Con Charlie<br>Fine! But mark my words, one day, justice will
+        prevail, and you'll pay for supporting the king and his wickedness!
       objectReference: {fileID: 0}
     - target: {fileID: 1273754835, guid: 242a15e64c25dc0449ac9a012a39aafa, type: 3}
       propertyPath: endLines.Array.data[1]
-      value: "Uwaaaaah :\u2019( Please sir, don\u2019t hurt me"
+      value: "mischievous Lime<br>Uwaaaaah :\u2019( Please sir, don\u2019t hurt me"
       objectReference: {fileID: 0}
     - target: {fileID: 4370038043478442473, guid: 242a15e64c25dc0449ac9a012a39aafa, type: 3}
       propertyPath: m_Name
@@ -38810,19 +38939,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 732144857, guid: 3c9ffcb71d89a7541be39f9311adb682, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.92079365
+      value: 0.97598875
       objectReference: {fileID: 0}
     - target: {fileID: 732144857, guid: 3c9ffcb71d89a7541be39f9311adb682, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.3900503
+      value: -0.21782106
       objectReference: {fileID: 0}
     - target: {fileID: 1423049836, guid: 3c9ffcb71d89a7541be39f9311adb682, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.90868926
+      value: 0.8333166
       objectReference: {fileID: 0}
     - target: {fileID: 1423049836, guid: 3c9ffcb71d89a7541be39f9311adb682, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.4174733
+      value: -0.5527961
       objectReference: {fileID: 0}
     - target: {fileID: 1570814703, guid: 3c9ffcb71d89a7541be39f9311adb682, type: 3}
       propertyPath: m_LocalPosition.x
@@ -38842,11 +38971,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 307673011724284306, guid: 3c9ffcb71d89a7541be39f9311adb682, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.79059887
+      value: 0.7862483
       objectReference: {fileID: 0}
     - target: {fileID: 307673011724284306, guid: 3c9ffcb71d89a7541be39f9311adb682, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.61233455
+      value: 0.6179107
       objectReference: {fileID: 0}
     - target: {fileID: 3329295435286480637, guid: 3c9ffcb71d89a7541be39f9311adb682, type: 3}
       propertyPath: m_LocalPosition.x
@@ -38882,19 +39011,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7181742543246895086, guid: 3c9ffcb71d89a7541be39f9311adb682, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.1975525
+      value: 0.37744716
       objectReference: {fileID: 0}
     - target: {fileID: 7181742543246895086, guid: 3c9ffcb71d89a7541be39f9311adb682, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.9802923
+      value: 0.9260312
       objectReference: {fileID: 0}
     - target: {fileID: 7818240413877632278, guid: 3c9ffcb71d89a7541be39f9311adb682, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.14912322
+      value: 0.270814
       objectReference: {fileID: 0}
     - target: {fileID: 7818240413877632278, guid: 3c9ffcb71d89a7541be39f9311adb682, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.98881865
+      value: -0.96263176
       objectReference: {fileID: 0}
     - target: {fileID: 8070142742786192333, guid: 3c9ffcb71d89a7541be39f9311adb682, type: 3}
       propertyPath: m_RootOrder
@@ -38942,11 +39071,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8362797871883676777, guid: 3c9ffcb71d89a7541be39f9311adb682, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.8453921
+      value: 0.82871217
       objectReference: {fileID: 0}
     - target: {fileID: 8362797871883676777, guid: 3c9ffcb71d89a7541be39f9311adb682, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.53414625
+      value: 0.559675
       objectReference: {fileID: 0}
     - target: {fileID: 9166779924180954030, guid: 3c9ffcb71d89a7541be39f9311adb682, type: 3}
       propertyPath: m_Name

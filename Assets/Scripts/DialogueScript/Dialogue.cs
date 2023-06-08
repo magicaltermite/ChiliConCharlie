@@ -30,7 +30,6 @@ namespace DialogueScript {
                 
                 if(textComponent.text == lines[index])
                 {
-                    Debug.Log(lines[index]);
                     NextLine();
                     
                 } else
@@ -51,7 +50,6 @@ namespace DialogueScript {
         {
             foreach (char c in lines[index].ToCharArray())
             {
-
                 textComponent.text += c;
                 yield return new WaitForSeconds(textSpeed);
             }
