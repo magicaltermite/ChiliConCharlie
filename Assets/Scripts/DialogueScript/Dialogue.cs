@@ -30,6 +30,7 @@ namespace DialogueScript {
                 
                 if(textComponent.text == lines[index])
                 {
+                    Debug.Log(lines[index]);
                     NextLine();
                     
                 } else

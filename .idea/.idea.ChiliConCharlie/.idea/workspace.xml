@@ -9,14 +9,15 @@
       <change beforePath="$PROJECT_DIR$/Assets/DialogueTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/DialogueTrigger.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Scenes/IntroCutscene.playable" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Scenes/IntroCutscene.playable" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Scenes/IntroCutscene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Scenes/IntroCutscene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Dialogue.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Dialogue.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DialogueScript/Dialogue.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DialogueScript/Dialogue.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.timeline@1.6.4/Editor/Signals/SignalReceiverInspector.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -81,10 +82,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="13544">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="13544" />
+      <option name="pid" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -106,6 +107,7 @@
       <workItem from="1686067527207" duration="640000" />
       <workItem from="1686231636119" duration="4581000" />
       <workItem from="1686247804431" duration="2292000" />
+      <workItem from="1686250485758" duration="629000" />
     </task>
     <servers />
   </component>

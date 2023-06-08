@@ -27,6 +27,7 @@ public class DialogueTrigger : MonoBehaviour {
 
     
     public void ActivateCanvas(bool activate) {
+        Debug.Log("Activate canvas called " + activate);
         if (activate && !canvas.activeInHierarchy) {
             canvas.SetActive(true);
             GetComponent<Dialogue>().enabled = true;
