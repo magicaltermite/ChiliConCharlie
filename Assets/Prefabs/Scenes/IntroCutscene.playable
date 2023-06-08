@@ -443,6 +443,32 @@ MonoBehaviour:
   m_Loop: 0
   m_Version: 1
   m_Rotation: {x: 0, y: 0, z: 0, w: 1}
+--- !u!114 &-7826270865385341235
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d0fc6f5187a81dc47999eefade6f0935, type: 3}
+  m_Name: Text + Background
+  m_EditorClassIdentifier: 
+  m_Version: 3
+  m_AnimClip: {fileID: 0}
+  m_Locked: 0
+  m_Muted: 0
+  m_CustomPlayableFullTypename: 
+  m_Curves: {fileID: 0}
+  m_Parent: {fileID: 11400000}
+  m_Children:
+  - {fileID: -716944233936780759}
+  - {fileID: 546073471159859455}
+  - {fileID: 5134297178739294460}
+  m_Clips: []
+  m_Markers:
+    m_Objects: []
 --- !u!114 &-7345797134060629726
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4745,7 +4771,7 @@ MonoBehaviour:
   m_Muted: 0
   m_CustomPlayableFullTypename: 
   m_Curves: {fileID: 0}
-  m_Parent: {fileID: 11400000}
+  m_Parent: {fileID: -7826270865385341235}
   m_Children: []
   m_Clips: []
   m_Markers:
@@ -4794,9 +4820,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Version: 0
   m_Tracks:
-  - {fileID: 5134297178739294460}
-  - {fileID: 546073471159859455}
-  - {fileID: -716944233936780759}
   - {fileID: 3913802898005779639}
   - {fileID: 984481636443465405}
   - {fileID: -8907643652320217220}
@@ -4804,6 +4827,7 @@ MonoBehaviour:
   - {fileID: 6042784245844152294}
   - {fileID: -1331167468853356565}
   - {fileID: 219334678673345527}
+  - {fileID: -7826270865385341235}
   m_FixedDuration: 0
   m_EditorSettings:
     m_Framerate: 60
@@ -4921,7 +4945,7 @@ MonoBehaviour:
   m_Muted: 0
   m_CustomPlayableFullTypename: 
   m_Curves: {fileID: 0}
-  m_Parent: {fileID: 11400000}
+  m_Parent: {fileID: -7826270865385341235}
   m_Children: []
   m_Clips: []
   m_Markers:
@@ -5535,7 +5559,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 17.983334
-        value: {x: 0.85, y: 0.84999996, z: 1}
+        value: {x: 0.84, y: 0.84999996, z: 1}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
@@ -5544,7 +5568,7 @@ AnimationClip:
         outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
       - serializedVersion: 3
         time: 18
-        value: {x: -0.85, y: 0.84999996, z: 1}
+        value: {x: -0.86, y: 0.84999996, z: 1}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
@@ -5553,7 +5577,7 @@ AnimationClip:
         outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
       - serializedVersion: 3
         time: 22.983334
-        value: {x: -0.85, y: 0.84999996, z: 1}
+        value: {x: -0.86, y: 0.84999996, z: 1}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
@@ -6554,7 +6578,7 @@ AnimationClip:
       m_Curve:
       - serializedVersion: 3
         time: 17.983334
-        value: 0.85
+        value: 0.84
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -6563,7 +6587,7 @@ AnimationClip:
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 18
-        value: -0.85
+        value: -0.86
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -6572,7 +6596,7 @@ AnimationClip:
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 22.983334
-        value: -0.85
+        value: -0.86
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -7964,7 +7988,7 @@ MonoBehaviour:
   m_Muted: 0
   m_CustomPlayableFullTypename: 
   m_Curves: {fileID: 0}
-  m_Parent: {fileID: 11400000}
+  m_Parent: {fileID: -7826270865385341235}
   m_Children: []
   m_Clips: []
   m_Markers:
