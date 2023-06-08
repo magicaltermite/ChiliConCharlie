@@ -19,6 +19,7 @@ public class PlayerAttack : MonoBehaviour
     // Start is called before the first frame update
     private void Start()
     {
+        attackArea.SetActive(false);
     }
 
     // Update is called once per frame
@@ -50,7 +51,7 @@ public class PlayerAttack : MonoBehaviour
     // Activates the attack collider, so that the player can deal damage to an enemy
     private void Attack()
     {
-        isAttacking = true;
-        attackArea.SetActive(isAttacking);
+            isAttacking = true;
+            attackArea.SetActive(isAttacking);
     }
 }

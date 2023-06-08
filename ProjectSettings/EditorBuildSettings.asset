@@ -6,9 +6,18 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Prefabs/Scenes/IntroCutscene.unity
+    guid: c93cac673f6abe041835ec3c0a901695
+  - enabled: 1
     path: Assets/Prefabs/Scenes/TestScene.unity
     guid: 6180dbd17174c564593e419d61670c3f
   - enabled: 1
     path: Assets/Prefabs/Scenes/Testing.unity
     guid: fb6b9d4fcebd9f64685574077a192fde
+  - enabled: 1
+    path: Assets/Prefabs/Scenes/Level_1_Momo.unity
+    guid: b99cbfe48444eef4bbd63a06c88d27f0
+  - enabled: 1
+    path: Assets/Prefabs/Scenes/Level_2_Momo.unity
+    guid: 294ec255ae40744429726cb4b612e151
   m_configObjects: {}
