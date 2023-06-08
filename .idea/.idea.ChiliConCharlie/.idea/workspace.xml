@@ -2,16 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="70bc6483-e1f7-4acf-8604-1651f0d9e828" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ChiliConCharlie/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ChiliConCharlie/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Materials/Slip.physicsMaterial2D" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Slip.physicsMaterial2D" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Chibi Con Charlie.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Chibi Con Charlie.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Scenes/IntroCutscene.playable" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Scenes/IntroCutscene.playable" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Scenes/IntroCutscene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Scenes/IntroCutscene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Scenes/Level_1_Momo.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Scenes/Level_1_Momo.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/ZombieEnemy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/ZombieEnemy.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Attack And Health/PlayerAttack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Attack And Health/PlayerAttack.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Death.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Death.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/ChangeSceneOnTimer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ChangeSceneOnTimer.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +71,7 @@
       <workItem from="1680091705161" duration="812000" />
       <workItem from="1680093346260" duration="11054000" />
       <workItem from="1686067527207" duration="640000" />
-      <workItem from="1686247755958" duration="3164000" />
+      <workItem from="1686247755958" duration="3282000" />
     </task>
     <servers />
   </component>

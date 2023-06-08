@@ -5,13 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class ChangeSceneOnTimer : MonoBehaviour
 {
-    public float changeTimer;
+    
     public string sceneName;
-    // Update is called once per frame
-    private void Update()
+
+    public void ChangeScene()
     {
-        changeTimer -= Time.deltaTime;
-        if(changeTimer <=0)
-            SceneManager.LoadScene(sceneName);
+        SceneManager.LoadScene(sceneName);
     }
 }
