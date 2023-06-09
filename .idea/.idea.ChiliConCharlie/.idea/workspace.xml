@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="70bc6483-e1f7-4acf-8604-1651f0d9e828" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/ChangeSceneOnTimer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ChangeSceneOnTimer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.ChiliConCharlie/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ChiliConCharlie/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/Chili Con Charlie/Idle.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Chili Con Charlie/Idle.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Animation/ZombieEnemy/ZombieEnemyCropped.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/ZombieEnemy/ZombieEnemyCropped.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Scenes/Level_1_Momo_Kopi.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Scenes/Level_1_Momo_Kopi.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -11,6 +14,7 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/ActivateText.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.timeline@1.6.4/Editor/Animation/ClipCurveEditor.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -71,7 +75,8 @@
       <workItem from="1680091705161" duration="812000" />
       <workItem from="1680093346260" duration="11054000" />
       <workItem from="1686067527207" duration="640000" />
-      <workItem from="1686247755958" duration="3282000" />
+      <workItem from="1686247755958" duration="3882000" />
+      <workItem from="1686307783002" duration="411000" />
     </task>
     <servers />
   </component>
