@@ -46363,7 +46363,8 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: -0.21071628
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3091177183111142214, guid: 9a572d0ecbb811d4a8c71d72bf725bba, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 9a572d0ecbb811d4a8c71d72bf725bba, type: 3}
 --- !u!4 &1355827905 stripped
 Transform:
@@ -49218,7 +49219,8 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: -0.2107011
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3091177183111142214, guid: 9a572d0ecbb811d4a8c71d72bf725bba, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 9a572d0ecbb811d4a8c71d72bf725bba, type: 3}
 --- !u!4 &1658664691 stripped
 Transform:
