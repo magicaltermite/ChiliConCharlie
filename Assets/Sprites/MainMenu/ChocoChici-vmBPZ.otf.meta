@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 1d7210bc1cef3d642b1fdcfe27f888d5
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Choco chici
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 5578943fd376e5548993a07d16aaa2e2, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
