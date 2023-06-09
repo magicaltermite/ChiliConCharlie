@@ -2097,6 +2097,10 @@ PrefabInstance:
       propertyPath: m_Constraints
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 1300476114, guid: 2a68b737c2548f2469c514306838e2d8, type: 3}
+      propertyPath: m_Volume
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9377435406715444, guid: 2a68b737c2548f2469c514306838e2d8, type: 3}
       propertyPath: m_LocalRotation.w
       value: 0.999106
@@ -2567,6 +2571,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 179783648, guid: 2a68b737c2548f2469c514306838e2d8, type: 3}
+    - {fileID: 1011467033, guid: 2a68b737c2548f2469c514306838e2d8, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 2a68b737c2548f2469c514306838e2d8, type: 3}
 --- !u!4 &231280657 stripped
 Transform:

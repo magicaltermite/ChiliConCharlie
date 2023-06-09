@@ -6,24 +6,28 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+<<<<<<< HEAD
     path: Assets/Prefabs/Scenes/MainMenu.unity
     guid: f6cd124058d4d75408fffce619f15963
   - enabled: 1
     path: Assets/Prefabs/Scenes/IntroCutscene.unity
+=======
+    path: Assets/Scenes/IntroCutscene.unity
+>>>>>>> 5a84dcdaedc7543e645d5a7732f98b2e8fb38adf
     guid: c93cac673f6abe041835ec3c0a901695
   - enabled: 1
-    path: Assets/Prefabs/Scenes/Level_1_Momo.unity
+    path: Assets/Scenes/Level_1_Momo.unity
     guid: b99cbfe48444eef4bbd63a06c88d27f0
   - enabled: 1
-    path: Assets/Prefabs/Scenes/Level_1_EndCutScene.unity
+    path: Assets/Scenes/Level_1_EndCutScene.unity
     guid: 8ab5082c201aa774fb107a6f9a9e9758
   - enabled: 1
-    path: Assets/Prefabs/Scenes/Level_2_Momo.unity
+    path: Assets/Scenes/Level_2_Momo.unity
     guid: 294ec255ae40744429726cb4b612e151
   - enabled: 1
-    path: Assets/Prefabs/Scenes/TestScene.unity
+    path: Assets/Scenes/TestScene.unity
     guid: 6180dbd17174c564593e419d61670c3f
   - enabled: 1
-    path: Assets/Prefabs/Scenes/Testing.unity
+    path: Assets/Scenes/Testing.unity
     guid: fb6b9d4fcebd9f64685574077a192fde
   m_configObjects: {}
