@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Prefabs/Scenes/Level_1_Momo.unity
     guid: b99cbfe48444eef4bbd63a06c88d27f0
   - enabled: 1
+    path: Assets/Prefabs/Scenes/Level_1_EndCutScene.unity
+    guid: 8ab5082c201aa774fb107a6f9a9e9758
+  - enabled: 1
     path: Assets/Prefabs/Scenes/Level_2_Momo.unity
     guid: 294ec255ae40744429726cb4b612e151
   - enabled: 1

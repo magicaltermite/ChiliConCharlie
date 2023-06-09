@@ -6,8 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="70bc6483-e1f7-4acf-8604-1651f0d9e828" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ChiliConCharlie/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ChiliConCharlie/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Scenes/IntroCutscene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Scenes/IntroCutscene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DialogueScript/Dialogue.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DialogueScript/Dialogue.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/DialogueTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/DialogueTrigger.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Scenes/Level_1_Momo.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Scenes/Level_1_Momo.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/ZombieEnemy.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/ZombieEnemy.prefab" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,6 +108,8 @@
       <workItem from="1686255891632" duration="1000" />
       <workItem from="1686255909506" duration="802000" />
       <workItem from="1686257407703" duration="1274000" />
+      <workItem from="1686310881707" duration="5000" />
+      <workItem from="1686311236043" duration="436000" />
     </task>
     <servers />
   </component>

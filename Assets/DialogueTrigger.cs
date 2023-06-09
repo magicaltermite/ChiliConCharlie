@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using DialogueScript;
 using UnityEngine;
 using UnityEngine.Playables;
+using UnityEngine.SceneManagement;
 using UnityEngine.Timeline;
 
 public class DialogueTrigger : MonoBehaviour {
@@ -12,18 +13,21 @@ public class DialogueTrigger : MonoBehaviour {
     private GameObject canvas;
     [SerializeField]
     private GameObject timeLine;
-    public string[] endLines;
 
+    [SerializeField] private string sceneToChangeTo;
     private string lineToCheck;
+
+    public string[] endLines;
+    
 
   
 
     private void OnTriggerEnter2D(Collider2D other) {
         if (other.CompareTag("Player")) {
-            canvas.SetActive(true);
-            GetComponent<Dialogue>().enabled = true;
+            SceneManager.LoadScene(sceneToChangeTo);
         }
     }
+
 
     
     public void ActivateCanvas(bool activate) {
