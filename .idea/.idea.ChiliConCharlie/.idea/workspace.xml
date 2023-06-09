@@ -5,165 +5,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="70bc6483-e1f7-4acf-8604-1651f0d9e828" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ChiliConCharlie/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ChiliConCharlie/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/25 Rpg Game Tracks/Action 1 (Loop).wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/25 Rpg Game Tracks/Action 1 (Loop).wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/25 Rpg Game Tracks/Action 2 (Loop).wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/25 Rpg Game Tracks/Action 2 (Loop).wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/25 Rpg Game Tracks/Action 3 (Loop).wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/25 Rpg Game Tracks/Action 3 (Loop).wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/25 Rpg Game Tracks/Action 4 (Loop).wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/25 Rpg Game Tracks/Action 4 (Loop).wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/25 Rpg Game Tracks/Action 5 (Loop).wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/25 Rpg Game Tracks/Action 5 (Loop).wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/25 Rpg Game Tracks/Ambient 1.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/25 Rpg Game Tracks/Ambient 1.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/25 Rpg Game Tracks/Ambient 10 .wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/25 Rpg Game Tracks/Ambient 10 .wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/25 Rpg Game Tracks/Ambient 2.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/25 Rpg Game Tracks/Ambient 2.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/25 Rpg Game Tracks/Ambient 3.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/25 Rpg Game Tracks/Ambient 3.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/25 Rpg Game Tracks/Ambient 4.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/25 Rpg Game Tracks/Ambient 4.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/25 Rpg Game Tracks/Ambient 5.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/25 Rpg Game Tracks/Ambient 5.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/25 Rpg Game Tracks/Ambient 6.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/25 Rpg Game Tracks/Ambient 6.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/25 Rpg Game Tracks/Ambient 7.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/25 Rpg Game Tracks/Ambient 7.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/25 Rpg Game Tracks/Ambient 8.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/25 Rpg Game Tracks/Ambient 8.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/25 Rpg Game Tracks/Ambient 9.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/25 Rpg Game Tracks/Ambient 9.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/25 Rpg Game Tracks/Complete.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/25 Rpg Game Tracks/Complete.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/25 Rpg Game Tracks/Death.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/25 Rpg Game Tracks/Death.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/25 Rpg Game Tracks/Light Ambient 1 (Loop).wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/25 Rpg Game Tracks/Light Ambient 1 (Loop).wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/25 Rpg Game Tracks/Light Ambient 2 (Loop).wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/25 Rpg Game Tracks/Light Ambient 2 (Loop).wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/25 Rpg Game Tracks/Light Ambient 3 (Loop).wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/25 Rpg Game Tracks/Light Ambient 3 (Loop).wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/25 Rpg Game Tracks/Light Ambient 4 (Loop).wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/25 Rpg Game Tracks/Light Ambient 4 (Loop).wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/25 Rpg Game Tracks/Light Ambient 5 (Loop).wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/25 Rpg Game Tracks/Light Ambient 5 (Loop).wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/25 Rpg Game Tracks/Night Ambient 1.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/25 Rpg Game Tracks/Night Ambient 1.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/25 Rpg Game Tracks/Night Ambient 2 (Loop).wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/25 Rpg Game Tracks/Night Ambient 2 (Loop).wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/25 Rpg Game Tracks/Night Ambient 3 (Loop).wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/25 Rpg Game Tracks/Night Ambient 3 (Loop).wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/25 Rpg Game Tracks/Night Ambient 4 (Loop).wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/25 Rpg Game Tracks/Night Ambient 4 (Loop).wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/25 Rpg Game Tracks/Night Ambient 5 (Loop).wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/25 Rpg Game Tracks/Night Ambient 5 (Loop).wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/25 Rpg Game Tracks/Strange.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/25 Rpg Game Tracks/Strange.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/25 Rpg Game Tracks/Victory.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/25 Rpg Game Tracks/Victory.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/RPG_Essentials_Free/10_Battle_SFX/03_Claw_03.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/RPG_Essentials_Free/10_Battle_SFX/03_Claw_03.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/RPG_Essentials_Free/10_Battle_SFX/08_Bite_04.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/RPG_Essentials_Free/10_Battle_SFX/08_Bite_04.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/RPG_Essentials_Free/10_Battle_SFX/15_Impact_flesh_02.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/RPG_Essentials_Free/10_Battle_SFX/15_Impact_flesh_02.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/RPG_Essentials_Free/10_Battle_SFX/22_Slash_04.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/RPG_Essentials_Free/10_Battle_SFX/22_Slash_04.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/RPG_Essentials_Free/10_Battle_SFX/35_Miss_Evade_02.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/RPG_Essentials_Free/10_Battle_SFX/35_Miss_Evade_02.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/RPG_Essentials_Free/10_Battle_SFX/39_Block_03.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/RPG_Essentials_Free/10_Battle_SFX/39_Block_03.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/RPG_Essentials_Free/10_Battle_SFX/51_Flee_02.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/RPG_Essentials_Free/10_Battle_SFX/51_Flee_02.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/RPG_Essentials_Free/10_Battle_SFX/55_Encounter_02.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/RPG_Essentials_Free/10_Battle_SFX/55_Encounter_02.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/RPG_Essentials_Free/10_Battle_SFX/69_Enemy_death_01.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/RPG_Essentials_Free/10_Battle_SFX/69_Enemy_death_01.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/RPG_Essentials_Free/10_Battle_SFX/77_flesh_02.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/RPG_Essentials_Free/10_Battle_SFX/77_flesh_02.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/RPG_Essentials_Free/10_UI_Menu_SFX.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/RPG_Essentials_Free/10_UI_Menu_SFX/001_Hover_01.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/RPG_Essentials_Free/10_UI_Menu_SFX/001_Hover_01.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/RPG_Essentials_Free/10_UI_Menu_SFX/013_Confirm_03.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/RPG_Essentials_Free/10_UI_Menu_SFX/013_Confirm_03.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/RPG_Essentials_Free/10_UI_Menu_SFX/029_Decline_09.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/RPG_Essentials_Free/10_UI_Menu_SFX/029_Decline_09.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/RPG_Essentials_Free/10_UI_Menu_SFX/033_Denied_03.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/RPG_Essentials_Free/10_UI_Menu_SFX/033_Denied_03.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/RPG_Essentials_Free/10_UI_Menu_SFX/051_use_item_01.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/RPG_Essentials_Free/10_UI_Menu_SFX/051_use_item_01.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/RPG_Essentials_Free/10_UI_Menu_SFX/070_Equip_10.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/RPG_Essentials_Free/10_UI_Menu_SFX/070_Equip_10.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/RPG_Essentials_Free/10_UI_Menu_SFX/071_Unequip_01.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/RPG_Essentials_Free/10_UI_Menu_SFX/071_Unequip_01.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/RPG_Essentials_Free/10_UI_Menu_SFX/079_Buy_sell_01.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/RPG_Essentials_Free/10_UI_Menu_SFX/079_Buy_sell_01.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/RPG_Essentials_Free/10_UI_Menu_SFX/092_Pause_04.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/RPG_Essentials_Free/10_UI_Menu_SFX/092_Pause_04.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/RPG_Essentials_Free/10_UI_Menu_SFX/098_Unpause_04.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/RPG_Essentials_Free/10_UI_Menu_SFX/098_Unpause_04.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/RPG_Essentials_Free/12_Player_Movement_SFX/03_Step_grass_03.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/RPG_Essentials_Free/12_Player_Movement_SFX/03_Step_grass_03.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/RPG_Essentials_Free/12_Player_Movement_SFX/08_Step_rock_02.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/RPG_Essentials_Free/12_Player_Movement_SFX/08_Step_rock_02.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/RPG_Essentials_Free/12_Player_Movement_SFX/12_Step_wood_03.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/RPG_Essentials_Free/12_Player_Movement_SFX/12_Step_wood_03.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/RPG_Essentials_Free/12_Player_Movement_SFX/14_Step_water_02.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/RPG_Essentials_Free/12_Player_Movement_SFX/14_Step_water_02.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/RPG_Essentials_Free/12_Player_Movement_SFX/26_Swim_Submerged_02.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/RPG_Essentials_Free/12_Player_Movement_SFX/26_Swim_Submerged_02.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/RPG_Essentials_Free/12_Player_Movement_SFX/30_Jump_03.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/RPG_Essentials_Free/12_Player_Movement_SFX/30_Jump_03.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/RPG_Essentials_Free/12_Player_Movement_SFX/42_Cling_climb_03.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/RPG_Essentials_Free/12_Player_Movement_SFX/42_Cling_climb_03.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/RPG_Essentials_Free/12_Player_Movement_SFX/45_Landing_01.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/RPG_Essentials_Free/12_Player_Movement_SFX/45_Landing_01.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/RPG_Essentials_Free/12_Player_Movement_SFX/52_Dive_02.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/RPG_Essentials_Free/12_Player_Movement_SFX/52_Dive_02.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/RPG_Essentials_Free/12_Player_Movement_SFX/56_Attack_03.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/RPG_Essentials_Free/12_Player_Movement_SFX/56_Attack_03.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/RPG_Essentials_Free/12_Player_Movement_SFX/61_Hit_03.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/RPG_Essentials_Free/12_Player_Movement_SFX/61_Hit_03.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/RPG_Essentials_Free/12_Player_Movement_SFX/88_Teleport_02.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/RPG_Essentials_Free/12_Player_Movement_SFX/88_Teleport_02.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/RPG_Essentials_Free/8_Atk_Magic_SFX.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/RPG_Essentials_Free/8_Atk_Magic_SFX/04_Fire_explosion_04_medium.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/RPG_Essentials_Free/8_Atk_Magic_SFX/04_Fire_explosion_04_medium.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/RPG_Essentials_Free/8_Atk_Magic_SFX/13_Ice_explosion_01.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/RPG_Essentials_Free/8_Atk_Magic_SFX/13_Ice_explosion_01.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/RPG_Essentials_Free/8_Atk_Magic_SFX/18_Thunder_02.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/RPG_Essentials_Free/8_Atk_Magic_SFX/18_Thunder_02.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/RPG_Essentials_Free/8_Atk_Magic_SFX/22_Water_02.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/RPG_Essentials_Free/8_Atk_Magic_SFX/22_Water_02.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/RPG_Essentials_Free/8_Atk_Magic_SFX/25_Wind_01.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/RPG_Essentials_Free/8_Atk_Magic_SFX/25_Wind_01.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/RPG_Essentials_Free/8_Atk_Magic_SFX/30_Earth_02.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/RPG_Essentials_Free/8_Atk_Magic_SFX/30_Earth_02.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/RPG_Essentials_Free/8_Atk_Magic_SFX/45_Charge_05.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/RPG_Essentials_Free/8_Atk_Magic_SFX/45_Charge_05.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/RPG_Essentials_Free/8_Atk_Magic_SFX/46_Poison_01.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/RPG_Essentials_Free/8_Atk_Magic_SFX/46_Poison_01.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/RPG_Essentials_Free/8_Buffs_Heals_SFX.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/RPG_Essentials_Free/8_Buffs_Heals_SFX/02_Heal_02.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/RPG_Essentials_Free/8_Buffs_Heals_SFX/02_Heal_02.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/RPG_Essentials_Free/8_Buffs_Heals_SFX/16_Atk_buff_04.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/RPG_Essentials_Free/8_Buffs_Heals_SFX/16_Atk_buff_04.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/RPG_Essentials_Free/8_Buffs_Heals_SFX/17_Def_buff_01.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/RPG_Essentials_Free/8_Buffs_Heals_SFX/17_Def_buff_01.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/RPG_Essentials_Free/8_Buffs_Heals_SFX/21_Debuff_01.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/RPG_Essentials_Free/8_Buffs_Heals_SFX/21_Debuff_01.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/RPG_Essentials_Free/8_Buffs_Heals_SFX/30_Revive_03.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/RPG_Essentials_Free/8_Buffs_Heals_SFX/30_Revive_03.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/RPG_Essentials_Free/8_Buffs_Heals_SFX/39_Absorb_04.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/RPG_Essentials_Free/8_Buffs_Heals_SFX/39_Absorb_04.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/RPG_Essentials_Free/8_Buffs_Heals_SFX/44_Sleep_01.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/RPG_Essentials_Free/8_Buffs_Heals_SFX/44_Sleep_01.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/RPG_Essentials_Free/8_Buffs_Heals_SFX/48_Speed_up_02.wav" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Audio/RPG_Essentials_Free/8_Buffs_Heals_SFX/48_Speed_up_02.wav.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Scenes/IntroCutscene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Scenes/IntroCutscene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Scenes.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Scenes/IntroCutscene.playable" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Scenes/IntroCutscene.playable.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Scenes/IntroCutscene.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Scenes/IntroCutscene.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Scenes/Level1_OuttroTimeline.playable" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Scenes/Level1_OuttroTimeline.playable.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Scenes/Level_1.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Scenes/Level_1.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Scenes/Level_1_EndCutScene.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Scenes/Level_1_EndCutScene.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Scenes/Level_1_Momo.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Scenes/Level_1_Momo.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Scenes/Level_2_Momo.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Scenes/Level_2_Momo.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Scenes/SampleScene.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Scenes/SampleScene.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Scenes/TestScene 1.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Scenes/TestScene 1.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Scenes/TestScene.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Scenes/TestScene.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Scenes/Testing.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Scenes/Testing.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Death.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Death.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -265,6 +131,7 @@
       <workItem from="1686257407703" duration="1274000" />
       <workItem from="1686310881707" duration="5000" />
       <workItem from="1686311236043" duration="1241000" />
+      <workItem from="1686315568696" duration="306000" />
     </task>
     <servers />
   </component>
